@@ -1,0 +1,170 @@
+site_name: Cybersecurity Complete Course
+site_description: A structured cybersecurity learning repository with authorized labs and projects.
+docs_dir: docs
+site_dir: site
+strict: true
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: README.md
+  - Phase 00 — Introduction:
+      - Cybersecurity and InfoSec: phase-00-introduction/01-cybersecurity-and-infosec.md
+      - Threats, risk, and attack surface: phase-00-introduction/02-threats-risk-and-attack-surface.md
+      - Teams, roles, and careers: phase-00-introduction/03-teams-roles-and-careers.md
+      - Case studies and exercise: phase-00-introduction/04-case-studies-and-exercise.md
+  - Phase 01 — Computer Fundamentals:
+      - Overview: phase-01-computer-fundamentals/index.md
+      - Computer architecture: phase-01-computer-fundamentals/01-computer-architecture.md
+      - Operating-system fundamentals: phase-01-computer-fundamentals/02-operating-system-fundamentals.md
+      - Virtualization and containers: phase-01-computer-fundamentals/03-virtualization-and-containers.md
+      - Internet fundamentals: phase-01-computer-fundamentals/04-internet-fundamentals.md
+      - Phase lab: phase-01-computer-fundamentals/05-phase-lab.md
+  - Phase 02 — Networking:
+      - Overview: phase-02-networking/index.md
+      - Networking basics: phase-02-networking/01-networking-basics.md
+      - OSI model: phase-02-networking/02-osi-model.md
+      - TCP/IP model: phase-02-networking/03-tcp-ip-model.md
+      - IP addressing: phase-02-networking/04-ip-addressing.md
+      - Network protocols: phase-02-networking/05-network-protocols.md
+      - Network security: phase-02-networking/06-network-security.md
+      - Networking tools: phase-02-networking/07-networking-tools.md
+      - Practical projects: phase-02-networking/08-practical-projects.md
+  - Phase 03 — Operating Systems:
+      - Overview: phase-03-operating-systems/index.md
+      - Linux fundamentals: phase-03-operating-systems/01-linux-fundamentals.md
+      - Windows fundamentals: phase-03-operating-systems/02-windows-fundamentals.md
+      - Administration labs: phase-03-operating-systems/03-administration-labs.md
+  - Phase 04 — Programming:
+      - Overview: phase-04-programming/index.md
+      - Language roadmap: phase-04-programming/01-language-roadmap.md
+      - Python: phase-04-programming/02-python.md
+      - Bash: phase-04-programming/03-bash.md
+      - PowerShell: phase-04-programming/04-powershell.md
+      - SQL: phase-04-programming/05-sql.md
+      - JavaScript: phase-04-programming/06-javascript.md
+      - HTML and CSS: phase-04-programming/07-html-css.md
+      - C: phase-04-programming/08-c.md
+      - Assembly: phase-04-programming/09-assembly.md
+      - Go: phase-04-programming/10-go.md
+      - Advanced programming: phase-04-programming/11-advanced-programming.md
+      - Projects and review: phase-04-programming/12-projects-and-review.md
+  - Phase 05 — Cybersecurity Fundamentals:
+      - Overview: phase-05-cybersecurity-fundamentals/index.md
+      - Security principles: phase-05-cybersecurity-fundamentals/01-security-principles.md
+      - Cryptography: phase-05-cybersecurity-fundamentals/02-cryptography.md
+      - Authentication: phase-05-cybersecurity-fundamentals/03-authentication.md
+      - Vulnerabilities and threats: phase-05-cybersecurity-fundamentals/04-vulnerabilities-and-threats.md
+      - Security frameworks: phase-05-cybersecurity-fundamentals/05-security-frameworks.md
+      - Risk assessment project: phase-05-cybersecurity-fundamentals/06-risk-assessment-project.md
+      - Final revision: phase-05-cybersecurity-fundamentals/07-final-revision.md
+  - Phase 06 — Security Tools and Lab:
+      - Overview: phase-06-security-tools-and-lab/index.md
+      - Lab and Kali Linux: phase-06-security-tools-and-lab/01-lab-and-kali-linux.md
+      - Network discovery: phase-06-security-tools-and-lab/02-network-discovery.md
+      - Packet analysis: phase-06-security-tools-and-lab/03-packet-analysis.md
+      - Web application testing: phase-06-security-tools-and-lab/04-web-application-testing.md
+      - Vulnerability assessment: phase-06-security-tools-and-lab/05-vulnerability-assessment.md
+      - Password security: phase-06-security-tools-and-lab/06-password-security.md
+      - Network and crypto utilities: phase-06-security-tools-and-lab/07-network-and-crypto-utilities.md
+      - Reverse engineering and forensics: phase-06-security-tools-and-lab/08-reverse-engineering-and-forensics.md
+      - Security monitoring: phase-06-security-tools-and-lab/09-security-monitoring.md
+      - Additional utilities: phase-06-security-tools-and-lab/10-additional-utilities.md
+      - Laboratory project: phase-06-security-tools-and-lab/11-laboratory-project.md
+      - Final revision: phase-06-security-tools-and-lab/12-final-revision.md
+  - Phase 07 — Ethical Hacking and Testing:
+      - Overview: phase-07-ethical-hacking-and-testing/index.md
+      - Testing fundamentals: phase-07-ethical-hacking-and-testing/01-testing-fundamentals.md
+      - Reconnaissance: phase-07-ethical-hacking-and-testing/02-reconnaissance.md
+      - Scanning and enumeration: phase-07-ethical-hacking-and-testing/03-scanning-and-enumeration.md
+      - Vulnerability assessment: phase-07-ethical-hacking-and-testing/04-vulnerability-assessment.md
+      - Exploitation concepts: phase-07-ethical-hacking-and-testing/05-exploitation-concepts.md
+      - Privilege escalation: phase-07-ethical-hacking-and-testing/06-privilege-escalation.md
+      - Reporting and retesting: phase-07-ethical-hacking-and-testing/07-reporting-and-retesting.md
+      - Practical projects: phase-07-ethical-hacking-and-testing/08-practical-projects.md
+      - Final revision: phase-07-ethical-hacking-and-testing/09-final-revision.md
+  - Phase 08 — Web Application and API Security:
+      - Overview: phase-08-web-app-and-api-security/index.md
+      - Web fundamentals: phase-08-web-app-and-api-security/01-web-fundamentals.md
+      - OWASP web vulnerabilities: phase-08-web-app-and-api-security/02-owasp-web-vulnerabilities.md
+      - Advanced web security: phase-08-web-app-and-api-security/03-advanced-web-security.md
+      - API security: phase-08-web-app-and-api-security/04-api-security.md
+      - Practical projects: phase-08-web-app-and-api-security/05-practical-projects.md
+      - Final revision: phase-08-web-app-and-api-security/06-final-revision.md
+  - Phase 09 — Network and System Security:
+      - Overview: phase-09-network-and-system-security/index.md
+      - Network architecture and controls: phase-09-network-and-system-security/01-network-architecture-and-controls.md
+      - Secure connectivity and services: phase-09-network-and-system-security/02-secure-connectivity-and-services.md
+      - Endpoint and system hardening: phase-09-network-and-system-security/03-endpoint-and-system-hardening.md
+      - Infrastructure risk and resilience: phase-09-network-and-system-security/04-infrastructure-risk-and-resilience.md
+      - Advanced network security: phase-09-network-and-system-security/05-advanced-network-security.md
+      - Practical labs and enterprise project: phase-09-network-and-system-security/06-practical-labs-and-enterprise-project.md
+      - Final revision: phase-09-network-and-system-security/07-final-revision.md
+  - Phase 10 — Defensive Security and SOC:
+      - Overview: phase-10-defensive-security-and-soc/index.md
+      - SOC fundamentals: phase-10-defensive-security-and-soc/01-soc-fundamentals.md
+      - Security monitoring and logs: phase-10-defensive-security-and-soc/02-security-monitoring-and-logs.md
+      - SIEM fundamentals: phase-10-defensive-security-and-soc/03-siem-fundamentals.md
+      - Endpoint detection: phase-10-defensive-security-and-soc/04-endpoint-detection.md
+      - Threat intelligence and hunting: phase-10-defensive-security-and-soc/05-threat-intelligence-and-hunting.md
+      - Incident response: phase-10-defensive-security-and-soc/06-incident-response.md
+      - Home SOC project: phase-10-defensive-security-and-soc/07-home-soc-project.md
+      - Final revision: phase-10-defensive-security-and-soc/08-final-revision.md
+  - Phase 11 — Digital Forensics and Malware Analysis:
+      - Overview: phase-11-digital-forensics-and-malware-analysis/index.md
+      - Digital forensics fundamentals: phase-11-digital-forensics-and-malware-analysis/01-digital-forensics-fundamentals.md
+      - Digital forensics tools: phase-11-digital-forensics-and-malware-analysis/02-digital-forensics-tools.md
+      - Malware analysis fundamentals: phase-11-digital-forensics-and-malware-analysis/03-malware-analysis-fundamentals.md
+      - Malware analysis tools: phase-11-digital-forensics-and-malware-analysis/04-malware-analysis-tools.md
+      - Safe analysis lab: phase-11-digital-forensics-and-malware-analysis/05-safe-analysis-lab.md
+      - Practical projects: phase-11-digital-forensics-and-malware-analysis/06-practical-projects.md
+      - Investigation and reporting: phase-11-digital-forensics-and-malware-analysis/07-investigation-and-reporting.md
+      - Final revision: phase-11-digital-forensics-and-malware-analysis/08-final-revision.md
+  - Phase 12 — Active Directory and Enterprise Security:
+      - Overview: phase-12-active-directory-and-enterprise-security/index.md
+      - Windows Server and AD architecture: phase-12-active-directory-and-enterprise-security/01-windows-server-and-ad-architecture.md
+      - Domain identities and Group Policy: phase-12-active-directory-and-enterprise-security/02-domain-identities-and-group-policy.md
+      - Directory protocols and authentication: phase-12-active-directory-and-enterprise-security/03-directory-protocols-and-authentication.md
+      - Trusts, security, and hardening: phase-12-active-directory-and-enterprise-security/04-trusts-security-and-hardening.md
+      - IAM and privileged access: phase-12-active-directory-and-enterprise-security/05-iam-and-privileged-access.md
+      - Enterprise security monitoring: phase-12-active-directory-and-enterprise-security/06-enterprise-security-monitoring.md
+      - AD attack concepts and detection: phase-12-active-directory-and-enterprise-security/07-ad-attack-concepts-and-detection.md
+      - Isolated AD lab and projects: phase-12-active-directory-and-enterprise-security/08-isolated-ad-lab-and-projects.md
+      - Final revision and assessment: phase-12-active-directory-and-enterprise-security/09-final-revision-and-assessment.md
