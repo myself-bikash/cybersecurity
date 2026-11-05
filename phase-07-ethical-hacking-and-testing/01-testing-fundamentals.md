@@ -106,6 +106,22 @@ Create a one-page authorization document for a fictional company named SecureTec
 
 Use fictional details; do not treat this exercise as authorization to test a real system.
 
+<details class="scenario-card">
+<summary>Quick check: an in-scope app links to another domain</summary>
+
+Your written fictional scope includes one training application, but a page links to a second system.
+What should the tester do next?
+
+<details>
+<summary>Check your reasoning</summary>
+
+Stop before interacting with the second system. A link or technical connection does not extend
+authorization. Check the written scope and ask the named contact for clarification or a scope
+update. Document the boundary and do not proceed unless permission is explicit.
+
+</details>
+</details>
+
 ## Key takeaways
 
 - Ethical testing is defined by authorization, scope, and responsible conduct.

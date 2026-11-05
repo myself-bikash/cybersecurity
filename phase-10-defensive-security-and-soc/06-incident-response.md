@@ -83,6 +83,24 @@ a file change. Identify what is known, what remains uncertain, which evidence sh
 and which response stage applies. Write a short incident report without using real credentials or
 personal data.
 
+<details class="scenario-card">
+<summary>Quick check: an alert arrives during business hours</summary>
+
+A synthetic endpoint alert appears on a shared workstation used for an important service. You do
+not yet know whether it is a false positive, and isolating the device could interrupt that service.
+What are your first response considerations?
+
+<details>
+<summary>Check your reasoning</summary>
+
+Follow the response plan, verify the alert and scope, preserve relevant evidence, and coordinate
+with the system owner and incident lead. Containment may be appropriate, but its impact and
+approval path matter. The alert alone does not confirm an incident; do not take a disruptive action
+outside your authority.
+
+</details>
+</details>
+
 ## Key takeaways
 
 - Incident response uses six stages: preparation, identification, containment, eradication,

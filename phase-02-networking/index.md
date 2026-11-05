@@ -33,3 +33,9 @@ or recommended references.
 - [ ] Explain the security concepts in Lesson 6.
 - [ ] Identify the purposes of the tools in Lesson 7.
 - [ ] Complete the practical projects only in an authorized lab.
+
+## Competency checkpoint
+
+Trace a fictional browser request from a client to a service and back. Label addressing, name
+resolution, transport, and application protocol at the level taught in this phase; identify where
+your explanation depends on an assumption.

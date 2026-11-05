@@ -170,6 +170,23 @@ The source's suggested API security requirements:
 | API key | Credential used to identify or authorize a client. |
 | API-key management | Secure creation, storage, monitoring, rotation, and revocation of keys. |
 
+<details class="scenario-card">
+<summary>Quick check: authenticated but still unauthorized?</summary>
+
+A signed-in test user changes an object identifier in a fictional request and receives another
+user's private record. Which control should decide whether that record is returned?
+
+<details>
+<summary>Check your reasoning</summary>
+
+The server must enforce object-level authorization for the requested record and operation. A valid
+login alone does not grant access to every object. The scenario describes a design weakness to
+review in an owned or isolated training application, not permission to inspect another person's
+data.
+
+</details>
+</details>
+
 ## Key takeaways
 
 - REST describes API architecture; authentication and authorization solve different problems.

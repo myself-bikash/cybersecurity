@@ -40,3 +40,9 @@ uses fictional case studies, sanitized reports, and defensive lab exercises inst
 The source's seven methodology stages, seven modules, five projects, tool list, definitions,
 comparisons, 30-question quiz, and 27-item completion checklist are mapped in these lessons.
 Source versioning and bibliography are not complete; no unsupported references are added.
+
+## Competency checkpoint
+
+Write a sample rules-of-engagement outline for a fictional assessment: authorization, scope,
+excluded systems, permitted methods, stop conditions, and reporting contacts. Review a sanitized
+finding and propose remediation and retesting criteria without testing a real target.

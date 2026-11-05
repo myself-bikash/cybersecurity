@@ -25,3 +25,9 @@ citations and are not presented as verified or recommended references.
 - [ ] Locate the administrative tools and logs named in the course.
 - [ ] Complete the Linux and Windows projects only on systems you own or are authorized to manage.
 - [ ] Answer the Phase 3 review questions.
+
+## Competency checkpoint
+
+Explain how a local account, file permission, process, and service relate on one operating system.
+Use a test system or a diagram, and record which logs or administrative views could help verify
+your explanation.

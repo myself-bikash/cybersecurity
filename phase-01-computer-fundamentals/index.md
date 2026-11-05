@@ -31,3 +31,9 @@ are recorded here for traceability and are not presented as verified or recommen
 - [ ] Compare virtual machines and containers and explain the listed Docker terms.
 - [ ] Describe how a browser request reaches and receives a response from a web server.
 - [ ] Complete the authorized, isolated Phase 1 practical lab.
+
+## Competency checkpoint
+
+Draw a simple computer and network path, label the components you can explain, then describe one
+question you would investigate before troubleshooting a device. Save the diagram and your lab
+notes as the first entry in your learning portfolio.

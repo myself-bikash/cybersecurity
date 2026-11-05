@@ -74,6 +74,24 @@ Use a fictional diagram or a home/lab network you own or are authorized to docum
 
 Do not access or modify a network you do not own or have permission to administer.
 
+<details class="scenario-card">
+<summary>Quick check: which device would you investigate?</summary>
+
+In a fictional office, one laptop can print to a local printer but cannot reach a service on another
+network. Name the device roles that may be involved, then describe one observation you would gather
+before changing a configuration.
+
+<details>
+<summary>Check your reasoning</summary>
+
+The LAN connection may involve a switch or access point; communication to another network involves
+a router or default gateway, and a firewall may apply rules. Confirm the laptop's network settings
+and whether other authorized lab devices show the same behavior before making a change. The
+scenario alone does not establish a firewall or routing failure.
+
+</details>
+</details>
+
 ## Key takeaways
 
 - Networks connect devices to communicate and share information.

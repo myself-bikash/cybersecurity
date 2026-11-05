@@ -120,6 +120,24 @@ Use a fictional company scenario. Do not probe a real system or send test messag
 5. Suggest non-invasive safeguards or monitoring questions, without attempting to reproduce the
    attack.
 
+<details class="scenario-card">
+<summary>Quick check: separate the risk from the evidence</summary>
+
+A fictional shop uses an outdated storefront component. A customer reports an unfamiliar account
+notification. Identify one **asset**, one possible **vulnerability**, one possible **threat**, and
+one **risk**. Which claim is currently an observation, and which claim would still be a hypothesis?
+
+<details>
+<summary>Check your reasoning</summary>
+
+The customer account or storefront may be an asset; the outdated component may be a weakness; a
+person or event that could take advantage of it is a threat; and the potential loss is risk. The
+notification is an observation if it was actually received. A claim that the component caused an
+account compromise is still a hypothesis until corroborating evidence supports it.
+
+</details>
+</details>
+
 ## Key takeaways
 
 - A threat may take advantage of a vulnerability; risk describes potential loss or damage.

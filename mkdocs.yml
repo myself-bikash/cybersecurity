@@ -1,17 +1,22 @@
-site_name: Cybersecurity Complete Course
-site_description: A structured cybersecurity learning repository with authorized labs and projects.
+site_name: "Cybersecurity: Foundations to Practice"
+site_description: A guided cybersecurity learning path with safe exercises and a cumulative capstone.
+site_author: Course contributors
 docs_dir: docs
 site_dir: site
 strict: true
 
 theme:
   name: material
+  favicon: assets/images/favicon.svg
+  font: false
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - navigation.expand
     - navigation.top
     - navigation.footer
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -43,9 +48,20 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/progress.js
+
 nav:
   - Home: README.md
+  - Start here:
+      - Course guide: course-guide.md
+      - Learning dashboard: progress.md
+      - Cumulative capstone: capstone/index.md
   - Phase 00 — Introduction:
+      - Overview: phase-00-introduction/index.md
       - Cybersecurity and InfoSec: phase-00-introduction/01-cybersecurity-and-infosec.md
       - Threats, risk, and attack surface: phase-00-introduction/02-threats-risk-and-attack-surface.md
       - Teams, roles, and careers: phase-00-introduction/03-teams-roles-and-careers.md

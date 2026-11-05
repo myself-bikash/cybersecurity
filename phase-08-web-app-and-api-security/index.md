@@ -33,3 +33,9 @@ user's data.
 The PDF names OWASP Top 10:2025 and includes incomplete webpage-title/domain citations without a
 complete bibliography. It also contains a redacted API authentication-method label (`******`);
 the exact term cannot be recovered, so it is identified as unresolved rather than guessed.
+
+## Competency checkpoint
+
+Review a fictional sign-in or API design. Identify its trust boundaries, the server-side access
+decision, one relevant risk, and a defensive change. Use a written scenario or local training
+application; do not test another user's data.

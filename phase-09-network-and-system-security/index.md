@@ -33,3 +33,8 @@ procedures or instructions for testing third-party systems.
 The PDF contains incomplete webpage-title/domain citations and a “Phase 9 knowledge test” heading,
 but no question text was available in the extracted source. This is recorded in the final revision
 page rather than reconstructed as though it came from the PDF.
+
+## Competency checkpoint
+
+Draw a small fictional network, mark its trust zones, and explain how one hardening, monitoring, and
+recovery control supports the system's security objective.

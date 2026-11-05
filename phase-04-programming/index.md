@@ -32,6 +32,12 @@ are not a prerequisite for starting.
 - [ ] Complete or document a plan for the six source projects.
 - [ ] Answer the Phase 4 readiness questions before proceeding to Phase 5.
 
+## Competency checkpoint
+
+Write or annotate a small, harmless script that reads a controlled input, validates it, and
+produces a clear result. Explain its assumptions and how you would test an ordinary and an invalid
+input.
+
 ## Source references
 
 The PDF contains webpage title/domain fragments for some language sections, but not a complete

@@ -35,3 +35,8 @@ non-destructive activity in your own lab; the lessons do not provide attack payl
 
 The PDF contains incomplete webpage-title/domain citations and no separate Phase 10 knowledge-test
 question set. The quiz in the final revision page is clearly labeled as course-created.
+
+## Competency checkpoint
+
+Use synthetic events to write a brief triage note containing observations, hypotheses, missing
+evidence, and a proportionate next step. Do not call an alert a confirmed incident without support.

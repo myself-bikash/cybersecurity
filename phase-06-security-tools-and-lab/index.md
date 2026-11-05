@@ -43,3 +43,9 @@ Exercises use sample results, synthetic data, or isolated local training applica
 All ten source modules, the lab project, tool definitions, comparison prompts, and 30-question
 assessment are mapped in this phase. The PDF includes webpage-title/domain fragments but no
 complete bibliography; these fragments are not treated as verified citations.
+
+## Competency checkpoint
+
+Choose one tool for a defined lab question, explain its purpose and limits, and interpret a
+synthetic or authorized result. Record scope, evidence, and the next safe step; do not treat a tool
+output as a conclusion by itself.

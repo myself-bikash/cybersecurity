@@ -210,6 +210,24 @@ virtual patching or other compensating controls where appropriate.
 6. Research a publicly documented zero-day using public reports; summarize affected software,
    vulnerability, potential impact, and defender response. Do not reproduce an exploit.
 
+<details class="scenario-card">
+<summary>Quick check: prioritize without inventing precision</summary>
+
+A fictional service holds customer records and has an outdated component. You have not confirmed
+whether the weakness is reachable or whether it has been exploited. Write one sentence describing
+the risk, then name one piece of evidence that would change your priority.
+
+<details>
+<summary>Check your reasoning</summary>
+
+State the asset, possible weakness, plausible threat, and potential impact, while labeling reachability
+and exploitation as unknown. Relevant evidence could include the affected configuration, exposure,
+available safeguards, or reliable incident telemetry. Do not invent a numeric score when the
+necessary context is missing.
+
+</details>
+</details>
+
 ## Key takeaways
 
 - A threat may cause harm, a vulnerability is a weakness, and an attack is an attempt to exploit it.

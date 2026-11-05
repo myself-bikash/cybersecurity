@@ -42,3 +42,9 @@ cracking, unauthorized directory collection, or moving between real systems.
 
 The PDF contains 17 modules and a 16-question assessment. The assessment page has no answer key;
 the key in the final lesson is course-created and is not presented as source material.
+
+## Competency checkpoint
+
+Create a small test-domain identity diagram, review a synthetic authentication timeline, identify a
+potentially risky permission relationship, and recommend a least-privilege fix. State why the
+relationship needs validation and keep all hands-on work in an isolated, authorized lab.

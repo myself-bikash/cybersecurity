@@ -26,6 +26,12 @@ with a risk assessment of a fictional company.
 - [ ] Recognize each source-listed threat and its defensive measures.
 - [ ] Compare the security frameworks and complete the fictional-company assessment.
 
+## Competency checkpoint
+
+Create a short fictional risk register with an asset, threat, weakness, impact, evidence, and
+defensive recommendation. Explain how your reasoning—not just a severity label—supports the
+priority.
+
 ## Source notes
 
 The source cites current-named framework editions including NIST CSF 2.0, CIS Controls v8.1, and
