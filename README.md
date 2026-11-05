@@ -5,8 +5,8 @@
   <h2>Learn how systems work. Learn how to protect them.</h2>
   <p>Start with the fundamentals, build practical skills, and connect them through investigation and defense. No prior cybersecurity experience is required.</p>
   <div class="hero-actions">
-    <a class="md-button md-button--primary" href="course-guide.md">Start the course</a>
-    <a class="md-button" href="progress.md">View my progress</a>
+    <a class="md-button md-button--primary" href="course-guide/">Start the course</a>
+    <a class="md-button" href="progress/">View my progress</a>
   </div>
 </div>
 
@@ -29,17 +29,17 @@ progress.
 ## Choose your starting point
 
 <div class="course-card-grid">
-  <a class="course-card" href="course-guide.md">
+  <a class="course-card" href="course-guide/">
     <span class="course-stage">New to cybersecurity</span>
     <strong>Start with a clear path</strong>
     <p>Learn how to use the course, then begin at Phase 00. Every foundation is introduced along the way.</p>
   </a>
-  <a class="course-card" href="phase-00-introduction/index.md">
+  <a class="course-card" href="phase-00-introduction/">
     <span class="course-stage">Returning learner</span>
     <strong>Find your next gap</strong>
     <p>Use phase objectives and checkpoints to review what you know and what you want to strengthen.</p>
   </a>
-  <a class="course-card" href="capstone/index.md">
+  <a class="course-card" href="capstone/">
     <span class="course-stage">Limited lab hardware</span>
     <strong>Practice with scenarios</strong>
     <p>Use diagrams and synthetic evidence when a virtual machine is unavailable or unnecessary.</p>
@@ -92,29 +92,3 @@ running security tools.
 | 10 | Defensive security and SOC | [Overview](phase-10-defensive-security-and-soc/index.md) |
 | 11 | Digital forensics and malware-analysis concepts | [Overview](phase-11-digital-forensics-and-malware-analysis/index.md) |
 | 12 | Active Directory and enterprise security | [Overview](phase-12-active-directory-and-enterprise-security/index.md) |
-
-## About the source
-
-The original PDF is preserved in the repository and is not included in the published website.
-Lessons retain its syllabus while clarifying language, organizing examples, and adding clearly
-labeled learning activities. Missing or incomplete source material is identified rather than
-invented. Any added assessment material is labeled as course-created.
-
-## Run the site locally
-
-Install the requirements and preview the documentation:
-
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/mkdocs serve
-```
-
-On Windows, use `.venv\Scripts\python.exe` and `.venv\Scripts\mkdocs.exe` instead of the Unix-style
-paths above. For a strict build check, run `.venv/bin/mkdocs build --strict`. The
-[progress dashboard](progress.md) stores lesson completion only in this browser on this device. It
-is not uploaded to the repository or a server. See the [course guide](course-guide.md) for study,
-lab, and portfolio guidance.
-
-The GitHub Pages workflow deploys on a push to `main` or `master` once Pages is configured to use
-GitHub Actions in repository settings.
