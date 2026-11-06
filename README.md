@@ -1,6 +1,6 @@
-#website Link#
+# Website Link
 
-[https://myself-bikash.github.io/cybersecurity/]
+https://myself-bikash.github.io/cybersecurity/
 
 # Cybersecurity: Foundations to Practice
 
