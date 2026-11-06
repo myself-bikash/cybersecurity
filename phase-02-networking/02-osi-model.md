@@ -49,6 +49,9 @@ Using a paper diagram or an authorized lab scenario:
 4. Explain why the OSI model is a reference model rather than a list of steps for one specific
    product.
 
+**Deliverable:** A two-direction layer diagram with each layer's role and the specified protocol,
+address, device, or data-unit examples placed beside it.
+
 ## Key takeaways
 
 - The OSI model has seven layers, each describing a different part of network communication.
@@ -63,3 +66,11 @@ Using a paper diagram or an authorized lab scenario:
 3. Which layer handles frames and MAC addressing?
 4. Which layer handles end-to-end data delivery?
 5. In which direction does data generally move at the sender and receiver?
+
+## Answer key
+
+1. Application, Presentation, Session, Transport, Network, Data Link, Physical.
+2. Network (Layer 3).
+3. Data Link (Layer 2).
+4. Transport (Layer 4).
+5. From Layer 7 down to Layer 1 at the sender, then upward from Layer 1 to Layer 7 at the receiver.

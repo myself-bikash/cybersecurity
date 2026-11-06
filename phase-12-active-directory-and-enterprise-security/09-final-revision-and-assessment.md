@@ -138,8 +138,22 @@ the source material; it is not represented as a source-provided assessment key.
 
 ### Course-created answer key
 
-1. B · 2. C · 3. B · 4. D · 5. A · 6. C · 7. B · 8. D ·
-9. B · 10. C · 11. D · 12. A · 13. B · 14. C · 15. D · 16. D
+1. B — AD centralizes identity and resource management.
+2. C — A domain controller runs AD DS and participates in domain authentication.
+3. B — An OU is a directory container for organization, delegation, and policy scope.
+4. D — Group Policy centrally configures user and computer settings.
+5. A — LDAP is the directory access protocol.
+6. C — Kerberos uses tickets.
+7. B — The KDC issues and manages Kerberos tickets.
+8. D — An SPN identifies a service and its associated account.
+9. B — Kerberoasting concerns service-ticket data associated with SPNs.
+10. C — AS-REP Roasting concerns accounts without Kerberos pre-authentication.
+11. D — Pass-the-Hash reuses hash-derived credential material.
+12. A — Pass-the-Ticket reuses Kerberos tickets.
+13. B — PAM protects privileged accounts and access.
+14. C — BloodHound maps potential AD privilege relationships and paths.
+15. D — Lateral movement is movement between compromised systems.
+16. D — Event 4769 records a Kerberos service-ticket request.
 
 ## Phase 12 completion checklist
 
@@ -162,6 +176,19 @@ the source material; it is not represented as a source-provided assessment key.
 - [ ] Identify suspicious lateral-movement indicators.
 - [ ] Build a small isolated Active Directory lab.
 - [ ] Write a structured enterprise security investigation report.
+
+## Practical review
+
+1. Use a fictional two-domain enterprise with a test user, one privileged group, and a permitted
+   trust relationship.
+2. Draw the domains, OUs, groups, and one resource; label where authentication and authorization
+   occur.
+3. Review a small synthetic log timeline with a sign-in and group-membership change.
+4. Identify one access risk, an alternative benign explanation, and the evidence required to
+   resolve the ambiguity.
+
+**Deliverable:** an annotated diagram and a short defensive review note containing the timeline,
+one least-privilege recommendation, and evidence limitations. Use synthetic data only.
 
 ## Key takeaways
 

@@ -51,6 +51,12 @@ Inspect only a test service you own or are authorized to review.
 5. Explain the difference between a self-signed certificate and one issued by a trusted
    Certificate Authority.
 
+**Steps and deliverable:** Use a private, isolated lab and benign test data. Record the OpenSSL
+version and the digest of a sample before and after a harmless edit. For the certificate exercise,
+use a disposable test key, list subject/issuer/validity, and delete or securely store the key
+according to the lab policy. Submit the observations and a labeled client/server diagram. Never
+expose a listener or use a production key.
+
 ## Key takeaways
 
 - Netcat supports network connectivity tests but can be misused; restrict practice to your
@@ -65,3 +71,16 @@ Inspect only a test service you own or are authorized to review.
 3. What is OpenSSL used for?
 4. How do public and private keys differ?
 5. How does a self-signed certificate differ from one issued by a trusted CA?
+
+## Suggested answers
+
+1. Netcat can act as a simple client or server and help inspect basic connections; it is not a
+   substitute for a full network-discovery tool.
+2. A TCP client initiates a connection to a listening server port; UDP sends datagrams without
+   TCP's connection handshake. A listening port accepts relevant incoming traffic.
+3. OpenSSL provides cryptographic and TLS/certificate utilities, including local key, certificate,
+   and digest operations.
+4. A public key can be shared and used for verification or encryption; its paired private key must
+   remain controlled and is used for signing or decryption, depending on the scheme.
+5. A self-signed certificate is signed by its own key and is not inherently trusted; a CA-issued
+   certificate has a signature chain that a client may trust after validating it.

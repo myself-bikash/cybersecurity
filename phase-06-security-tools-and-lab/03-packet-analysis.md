@@ -74,6 +74,12 @@ or an explicitly authorized lab.
 Packet captures can contain private or sensitive information. Capture only traffic you are
 authorized to inspect; use training captures when possible.
 
+**Steps and deliverable:** Start with a supplied sanitized capture. Record the capture source and
+scope, apply a display filter for the listed protocol, identify one handshake and one DNS exchange,
+then compare how Wireshark and tcpdump present the same packets. Submit a labeled screenshot or
+diagram and a brief note describing what the capture cannot reveal. Do not export credentials or
+capture unrelated users' traffic.
+
 ## Key takeaways
 
 - Wireshark and tcpdump analyze traffic; neither automatically explains whether an event is malicious.
@@ -87,3 +93,14 @@ authorized to inspect; use training captures when possible.
 3. What are the three steps in a TCP handshake?
 4. How do Wireshark and tcpdump differ?
 5. Why can a packet capture require careful privacy handling?
+
+## Suggested answers
+
+1. A packet is a unit of network communication; a capture is recorded packets; an interface is a
+   network connection point; a display filter changes which captured packets are shown.
+2. Wireshark has a packet list, packet details, and packet bytes panes.
+3. TCP handshake: client sends SYN, server replies SYN-ACK, client replies ACK.
+4. Wireshark offers a graphical, detailed view; tcpdump is a command-line capture and summary tool.
+   Both can inspect the same authorized capture.
+5. Captures may expose identifiers, internal addresses, URLs, or unencrypted data; minimize access,
+   retention, and sharing.

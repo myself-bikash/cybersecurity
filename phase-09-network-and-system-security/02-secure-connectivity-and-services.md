@@ -120,6 +120,10 @@ Use your own router, devices, accounts, or a simulated configuration:
 4. Review a sanitized email header from a test account and identify authentication results without
    opening suspicious attachments or links.
 
+**Deliverable:** a one-page review with the router checklist, a DNS-flow diagram, a sanitized
+record/header analysis, and one recommended control for each area. Record only synthetic or
+authorized information.
+
 ## Key takeaways
 
 - VPNs protect connectivity but do not replace identity, authorization, endpoint health, or
@@ -138,3 +142,16 @@ Use your own router, devices, accounts, or a simulated configuration:
 5. What does DNS filtering do?
 6. How do SPF, DKIM, and DMARC differ?
 7. Name four email threats and two defensive practices.
+
+### Answer key
+
+1. Remote-access VPN connects a device to a network; site-to-site VPN connects networks.
+2. Stolen credentials, unpatched appliances, weak configuration, exposed management, or excessive
+   access remain risks; encryption protects a channel, not every endpoint or identity.
+3. WEP is identified as insecure and obsolete.
+4. DNSSEC authenticates DNS data integrity; DoH and DoT encrypt client-to-resolver DNS traffic.
+5. DNS filtering restricts access to selected domains, commonly to block known malicious destinations.
+6. SPF identifies authorized sending servers; DKIM verifies a domain-associated signature; DMARC
+   defines receiver handling and reporting for applicable authentication failures.
+7. Examples include phishing, spoofing, business email compromise, and malicious attachments;
+   MFA and SPF/DKIM/DMARC are two defensive measures.

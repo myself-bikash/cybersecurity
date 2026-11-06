@@ -85,6 +85,9 @@ On a computer you own or are authorized to inspect:
 
 Do not open or modify hardware unless you are qualified and authorized to do so.
 
+**Deliverable:** One labeled component diagram, an input/output device list, and a seven-step boot
+sequence with firmware and operating-system stages marked.
+
 ## Key takeaways
 
 - The CPU executes instructions; the ALU and control unit have distinct roles.
@@ -100,3 +103,12 @@ Do not open or modify hardware unless you are qualified and authorized to do so.
 3. What is the role of cache memory?
 4. List the seven boot stages in order.
 5. How does an input device differ from an output device?
+
+## Answer key
+
+1. The ALU performs arithmetic and logic; the control unit coordinates instruction execution.
+2. RAM is generally volatile working memory; ROM is non-volatile and can hold firmware instructions.
+3. Cache keeps frequently used data close to the CPU to reduce slower RAM access.
+4. Power on; firmware initializes hardware; firmware finds a boot device; bootloader starts; kernel
+   loads; system services start; login screen appears.
+5. Input sends information to the computer; output presents or produces information.

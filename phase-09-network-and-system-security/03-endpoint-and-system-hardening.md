@@ -120,6 +120,9 @@ firewall, or account settings, take a snapshot or confirm you have a recovery ro
    BitLocker availability.
 5. Record a before/after hardening checklist and explain why each change is appropriate.
 
+**Deliverable:** a sanitized before/after checklist naming the system, observed setting, proposed
+change, reason, and recovery check. Do not publish account names, service details, or log contents.
+
 ## Key takeaways
 
 - Endpoints require protection, patching, monitoring, and least privilege.
@@ -136,3 +139,17 @@ firewall, or account settings, take a snapshot or confirm you have a recovery ro
 4. Why should SSH and firewall changes be tested with a recovery path?
 5. What does `sudo` provide in the source's least-privilege guidance?
 6. Name four Windows hardening features and their purposes.
+
+### Answer key
+
+1. An endpoint is a network-connected device; endpoint security is the set of protections applied
+   to it.
+2. Antivirus focuses on malicious software; EDR collects and investigates endpoint activity; XDR
+   correlates signals across security domains.
+3. Examples: services, network exposure, administration, updates, logging, data protection, and
+   permissions; each reduces a different source of risk.
+4. A mistaken rule or SSH setting can interrupt access; a tested recovery route allows safe rollback.
+5. `sudo` grants approved users controlled, task-specific elevated commands rather than shared root
+   access.
+6. Examples: Defender detects malware, Firewall controls connections, UAC prompts for elevation,
+   BitLocker encrypts storage, Update installs patches, and Group Policy applies settings centrally.

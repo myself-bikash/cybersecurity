@@ -34,6 +34,9 @@ low-level programming.
 A **buffer overflow** occurs when a program writes more data into a buffer than it can hold. The
 source says this can corrupt adjacent memory and potentially cause security vulnerabilities.
 
+These are different concepts: a pointer refers to a location; a buffer is a region that holds data.
+An overflow is an out-of-bounds write, not simply the use of a pointer.
+
 ## Data structures and algorithms
 
 Data structures organize and store information. The source examples are arrays, linked lists,
@@ -76,6 +79,9 @@ Review a small, instructor-provided program or design description:
 3. If a database is involved, explain whether the source's parameterized-query concept is applied.
 4. Do not test real services, use real credentials, or add exploit payloads.
 
+**Deliverable:** A completed review table with one row per secure-coding concept, the evidence in
+the sample (or *not shown*), and one safe design recommendation.
+
 ## Key takeaways
 
 - Programs allocate, use, and release memory; memory misuse can cause leaks or corruption.
@@ -91,3 +97,15 @@ Review a small, instructor-provided program or design description:
 4. How does the source define a buffer overflow?
 5. Name four data structures and three algorithm topics.
 6. Name five secure-coding concepts from the source.
+
+## Answer key
+
+1. Allocating, using, and releasing memory so programs can operate without waste or corruption.
+2. The stack commonly stores function-call information and local variables with automatic
+   management; the heap supports dynamic allocation and has runtime/language-dependent management.
+3. A variable that stores a memory address.
+4. Writing more data into a buffer than it can hold, potentially corrupting adjacent memory.
+5. Data structures: arrays, lists, stacks, queues, hash tables, trees, or graphs. Algorithms:
+   searching, sorting, recursion, or complexity analysis.
+6. Examples include input validation, output encoding, authentication, authorization, secure
+   password storage, parameterized SQL, secure sessions, error handling, and secrets management.

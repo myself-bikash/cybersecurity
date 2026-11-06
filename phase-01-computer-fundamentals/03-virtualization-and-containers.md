@@ -67,6 +67,9 @@ In an isolated lab on hardware you own or are authorized to use:
 
 Do not treat virtualization as a guarantee that a guest or container cannot affect its host.
 
+**Deliverable:** A labeled host/VM/container diagram and a short comparison explaining the
+hypervisor type and image/container relationship.
+
 ## Key takeaways
 
 - A VM runs its own operating system; a hypervisor creates and manages VMs.
@@ -82,3 +85,13 @@ Do not treat virtualization as a guarantee that a guest or container cannot affe
 3. Which examples does the source list for each hypervisor type?
 4. How do VMs and containers differ in the source's description?
 5. Why does the source caution against assuming isolation is absolute?
+
+## Answer key
+
+1. A hypervisor creates and manages virtual machines.
+2. Type 1 runs directly on hardware; Type 2 runs on an existing operating system.
+3. Type 1 examples are VMware ESXi and Hyper-V; Type 2 examples are VirtualBox and VMware
+   Workstation.
+4. A VM runs its own OS; containers package applications and dependencies and generally share the
+   host kernel.
+5. Isolation can have limits or misconfiguration, so a guest or container may still affect its host.

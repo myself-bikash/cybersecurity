@@ -112,6 +112,11 @@ Write a report for a fictional SecureTech assessment using supplied findings. In
 executive summary, one evidence-backed technical finding, severity rationale, a fix, and a retest
 status. Use mock evidence only; exclude all real credentials and personal information.
 
+**Steps and deliverable:** Use the supplied mock finding to fill the report structure. Separate
+observations from impact assumptions, justify severity in the fictional context, and choose one of
+the four retest outcomes. Submit a one-page executive summary plus one technical finding and a
+sanitized evidence-handling note.
+
 ## Key takeaways
 
 - Reports communicate impact and remediation to technical and non-technical readers.
@@ -127,3 +132,18 @@ status. Use mock evidence only; exclude all real credentials and personal inform
 4. Why should severity not be copied directly from a tool?
 5. What are the four retest outcomes?
 6. What sections belong in a professional report?
+
+## Suggested answers
+
+1. The executive summary is for decision-makers; it should explain scope, overall risk, important
+   findings, and prioritized actions in plain language.
+2. Include title, affected component, description, evidence, impact, severity rationale, root
+   cause, recommendation, and retest information.
+3. Minimize collection, redact secrets and personal data, restrict access, store securely, and
+   follow retention and chain-of-custody requirements.
+4. Tools may misclassify context, impact, or confidence; severity should reflect evidence and the
+   organization's environment.
+5. Fixed, partially fixed, not fixed, and unable to verify (or the equivalent outcomes defined in
+   the report).
+6. A professional report covers scope, methodology, summary, findings/evidence, severity,
+   recommendations, retest status, limitations, and conclusion.

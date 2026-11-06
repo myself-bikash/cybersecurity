@@ -191,6 +191,10 @@ Use a written scenario or synthetic data; do not assess systems outside your sco
 5. Given synthetic server, endpoint, firewall, and authentication events, identify which sources a
    SIEM should correlate and what additional context an analyst needs.
 
+**Deliverable:** a segmentation diagram and a short risk worksheet containing one prioritized
+finding, patch decision, backup/RPO/RTO plan, and proposed SIEM correlation. Use fictional assets
+and data only.
+
 ## Key takeaways
 
 - Segmentation limits unnecessary communication and reduces incident impact.
@@ -209,3 +213,18 @@ Use a written scenario or synthetic data; do not assess systems outside your sco
 6. How do incremental and differential backups differ?
 7. What do RPO and RTO measure?
 8. What kinds of events may infrastructure monitoring collect?
+
+### Answer key
+
+1. Physical segmentation uses separate infrastructure; logical and subnet segmentation separate
+   traffic/address ranges; microsegmentation applies finer workload-level controls.
+2. A VPN commonly provides protected network connectivity; ZTNA grants policy-based access to
+   specific applications or resources.
+3. Discover assets, identify issues, assess context, prioritize, remediate or reduce risk, verify,
+   and continue monitoring.
+4. CVE is an identifier for a disclosed vulnerability; CVSS communicates technical severity.
+5. Vulnerability management covers weaknesses broadly; patch management handles software updates.
+6. Incremental copies changes since the last backup; differential copies changes since the last full.
+7. RPO is the acceptable data-loss interval; RTO is the target restoration time.
+8. It may collect system health, network, firewall, endpoint, application, cloud, database, and
+   authentication events to identify threats or disruption.

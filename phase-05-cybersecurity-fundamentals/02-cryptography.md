@@ -179,6 +179,12 @@ mechanisms.
 5. Diagram the roles of public and private keys in encryption and digital signatures; distinguish
    the two operations.
 
+**Steps and deliverable:** Use a short synthetic string and a harmless local sample file. Record
+their SHA-256 digests before and after a one-character edit; explain what changed and why a matching
+digest alone does not establish who created a file. Then submit one labeled diagram contrasting
+confidentiality with a public/private key pair and signature verification. Do not use real secrets
+or upload files to an online service.
+
 ## Key takeaways
 
 - Encryption protects confidentiality and is reversible with the appropriate key; hashing produces
@@ -197,3 +203,19 @@ mechanisms.
 5. How does a digital signature differ from a digital certificate?
 6. What does PKI manage?
 7. What does TLS protect, and what does HTTPS not guarantee?
+
+## Suggested answers
+
+1. Encryption is reversible with the appropriate key and protects confidentiality; hashing is a
+   one-way digest used to check data and is not encryption.
+2. Symmetric cryptography uses one shared secret key; asymmetric cryptography uses a related public
+   and private key pair.
+3. AES is a symmetric cipher; RSA and ECC are asymmetric cryptographic approaches; SHA-256 is a
+   hash function. Their jobs differ, so a hash is not an encryption algorithm.
+4. A unique salt prevents identical passwords from producing identical stored hashes and makes
+   precomputed hash tables less useful; it need not be secret.
+5. A digital signature is cryptographic evidence over data, verified with a public key; a
+   certificate binds a public key to an asserted identity and is signed by an issuer.
+6. PKI manages keys, certificates, issuers, validation, and trust relationships.
+7. TLS protects data in transit and authenticates a server when certificate validation succeeds.
+   HTTPS does not prove a site is honest, secure internally, or safe to use.

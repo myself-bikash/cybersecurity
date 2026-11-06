@@ -79,10 +79,16 @@ than keeping unrelated copies.
 
 ## Practical exercise
 
-Using a diagram or synthetic company scenario, label clients, servers, AD DS, domain controllers,
-DNS, a domain, an OU, and several directory objects. Explain how an employee's domain-connected
-laptop locates a controller and receives access to an approved resource. Do not connect to or
-collect information from a real organization's directory.
+1. Use a diagram or synthetic company scenario and label clients, servers, AD DS, domain
+   controllers, DNS, a domain, an OU, and several directory objects.
+2. Trace how an employee's domain-connected laptop locates a controller and requests an approved
+   resource.
+3. Mark which step authenticates identity and which step checks authorization.
+
+Do not connect to or collect information from a real organization's directory.
+
+**Deliverable:** an annotated domain diagram and a short sign-in/resource-access flow with
+authentication and authorization labeled.
 
 ## Key takeaways
 
@@ -98,3 +104,14 @@ collect information from a real organization's directory.
 3. What is the difference between AD and AD DS?
 4. How do a domain, tree, and forest differ?
 5. Why might an organization operate multiple domain controllers?
+
+### Answer key
+
+1. A client requests a service; a server provides it, such as a file server responding to a laptop.
+2. Examples: AD DS, DNS, DHCP, File Server, IIS, AD CS, and Remote Desktop Services; each provides
+   a distinct network or management service.
+3. AD is the directory service; AD DS is the Windows Server role that provides its domain services.
+4. A domain contains managed objects; a tree connects domains in a contiguous namespace; a forest
+   contains one or more trees and shares forest-level directory components.
+5. Multiple DCs improve availability and distribution of authentication and directory data; they
+   replicate rather than acting as unrelated copies.

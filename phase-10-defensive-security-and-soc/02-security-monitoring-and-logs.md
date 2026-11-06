@@ -134,10 +134,14 @@ timeline, preserve source data, and clearly distinguish observed facts from anal
 
 ## Practical exercise
 
-Use synthetic Windows, Linux, firewall, DNS, and endpoint records. Identify the timestamp, user,
-device, event type, and outcome in each record. Correlate related events into a timeline and list
-what additional evidence would confirm or disprove a hypothesis. Do not generate repeated
-authentication failures outside a disposable lab account.
+1. Use synthetic Windows, Linux, firewall, DNS, and endpoint records.
+2. Extract each record's timestamp, user, device, event type, and outcome.
+3. Correlate related events into a timeline and state a testable hypothesis.
+4. List evidence that could confirm or disprove it; do not generate repeated authentication
+   failures outside a disposable lab account.
+
+**Deliverable:** a sanitized event-field worksheet, chronological timeline, and a short note that
+separates observed facts from a testable hypothesis.
 
 ## Key takeaways
 
@@ -156,3 +160,18 @@ authentication failures outside a disposable lab account.
 5. How do Linux log locations vary?
 6. What is endpoint telemetry?
 7. Why is correlating multiple logs useful?
+
+### Answer key
+
+1. At minimum, time, source/system, event or action, relevant identity/object, and outcome; these
+   fields make events interpretable and correlatable.
+2. Examples: authentication, endpoint, firewall, DNS, network, system, and application logs; each
+   records a different part of activity.
+3. 4624 records a successful logon; 4625 records a failed logon.
+4. The same event can be benign or suspicious depending on account, device, timing, configuration,
+   and related events.
+5. Paths and services vary by distribution, logging software, and configuration.
+6. Endpoint telemetry is detailed activity data from a computer, such as process, file, login, and
+   connection events.
+7. Correlation combines partial evidence from different sources into a more complete timeline and
+   helps test an explanation.

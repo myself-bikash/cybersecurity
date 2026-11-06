@@ -227,6 +227,11 @@ other people's accounts.
 | Cryptographic failures | Audit a sample design for plaintext storage, obsolete algorithms, and key-handling gaps. |
 | Business logic | Model a purchase or one-time coupon workflow and write tests for its state invariants. |
 
+**Steps and deliverable:** Choose three rows from the table and review the local training code or
+provided scenario. For each, record the violated security property, likely root cause, safe
+defensive test, and fix. Include one cross-cutting control and state which evidence would establish
+the fix. Submit a three-finding comparison table; use only synthetic data and no exploit payloads.
+
 ## Key takeaways
 
 - These vulnerabilities have distinct root causes; identify the trust boundary and missing control.
@@ -245,3 +250,22 @@ other people's accounts.
 6. What is the difference between password hashing and encryption?
 7. Give an example of a business rule that should be enforced atomically.
 8. Which defenses apply across several of these vulnerability classes?
+
+## Suggested answers
+
+1. SQL injection occurs when untrusted input changes query structure; parameterized queries keep
+   values separate from SQL instructions.
+2. Stored XSS is saved and later served; reflected XSS is returned in a response to a request;
+   DOM-based XSS arises from unsafe client-side source-to-sink handling.
+3. CSRF tricks a user's browser into making an unwanted request to a site where they are
+   authenticated; SSRF tricks a server into making an unintended request.
+4. IDOR/BOLA occurs when the server fails to authorize access to a referenced object; the user
+   may already be correctly authenticated.
+5. File content can differ from its name suffix, so validate content/type, size, storage, and
+   serving behavior rather than trusting extension alone.
+6. Password hashing is one-way and purpose-built for verification; encryption is reversible with a
+   key and should not be used as password storage.
+7. For example, a payment or one-time coupon must be checked and marked consumed in one atomic
+   transaction so concurrent requests cannot redeem it twice.
+8. Server-side authorization, safe input handling, least privilege, secure configuration, careful
+   error handling, logging, and code review can reduce several classes of risk.

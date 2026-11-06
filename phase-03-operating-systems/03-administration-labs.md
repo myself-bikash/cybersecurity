@@ -52,6 +52,9 @@ Complete each item in a Windows VM:
 The source's summary tasks—investigate Event Viewer, configure Windows Firewall, and harden both
 operating systems—are included above.
 
+**Deliverable:** A completed checklist and concise lab journal recording the VM/scope, task status,
+observations, recovery steps, and one lesson learned for Linux and Windows. Do not record secrets.
+
 ## Test yourself before Phase 4
 
 Answer without looking at the lessons:
@@ -85,3 +88,38 @@ Answer without looking at the lessons:
 2. Which projects did you complete in the Windows VM?
 3. Which tasks required elevated privileges, and how did you keep changes within scope?
 4. Which review questions need more study before Phase 4?
+
+## Answer key
+
+### Test yourself
+
+1. Linux architecture includes hardware, kernel, system libraries, shell, utilities, and
+   applications, working together to run software and manage resources.
+2. Debian is a community-developed distribution; Ubuntu is general-purpose and Debian-based; Kali
+   is Debian-based and tailored to security testing and forensics.
+3. `/` is the root of the Linux filesystem; `/root` is the root user's home directory.
+4. `chmod` changes permissions; `chown` changes file ownership.
+5. A normal user has limited access; root has broad administrative privileges.
+6. `systemctl` manages or reports on systemd services.
+7. System logs record operating-system and application events for troubleshooting and investigation.
+8. Bash scripting uses shell commands and programming constructs to automate tasks.
+9. The Registry is a hierarchical database of Windows and application configuration settings.
+10. NTFS is a Windows filesystem that organizes files and supports access permissions.
+11. A process is a running program instance; a service is a background program that performs a
+    system or application function.
+12. Event Viewer displays recorded Windows application, security, system, and setup events.
+13. PowerShell is Microsoft's command-line shell and scripting language for administration and
+    automation.
+14. NTLM is a Windows authentication protocol; Kerberos is a ticket-based network authentication
+    protocol.
+15. Group Policy centrally manages configuration for Windows users and computers.
+
+### Revision questions
+
+1–2. Learner-specific: name the projects actually completed and summarize one observation from each;
+mark unfinished projects as not completed.
+3. Tasks such as creating accounts, editing permissions, managing services, changing firewall
+rules, and changing SSH or security policies may require elevation. Use only a disposable authorized
+VM and record a recovery plan.
+4. Learner-specific: name a question that was missed or could not be explained with an example, then
+revisit that lesson.

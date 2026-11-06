@@ -87,9 +87,14 @@ finance-server or domain-administration access.
 
 ## Practical exercise
 
-Use a fictional domain diagram to review trust direction, privileged-group membership, and
-delegated access. Identify excessive access and propose least-privilege changes. Do not change
-trusts or permissions in a real organization.
+1. Use a fictional domain diagram to review trust direction, privileged-group membership, and
+   delegated access.
+2. Identify excessive access and propose least-privilege changes.
+3. Mark which assumptions require confirmation from a domain owner; do not change real trusts or
+   permissions.
+
+**Deliverable:** an annotated trust diagram, prioritized access-risk list, and a proposed least-
+privilege change for each finding; state which details need validation by a domain owner.
 
 ## Key takeaways
 
@@ -105,3 +110,17 @@ trusts or permissions in a real organization.
 3. Name five weaknesses that can increase AD risk.
 4. Why should Domain Administrator membership be limited?
 5. Give four domain-controller hardening practices.
+
+### Answer key
+
+1. Parent-child and tree-root trusts connect domains/trees in a forest; shortcut trusts provide a
+   direct path; external trusts connect domains outside the same forest; forest trusts connect
+   forests.
+2. Trust direction describes which side recognizes identities from the other; two-way recognition
+   does not grant universal resource permissions.
+3. Examples: weak service credentials, excessive privilege, unnecessary NTLM, unsafe delegation or
+   ACLs, unpatched DCs, weak GPOs, insecure LDAP, and unmonitored authentication.
+4. Domain Administrator can alter broad identity and security controls; limiting membership reduces
+   the impact of account compromise or mistakes.
+5. Patch, restrict interactive/admin access, use secure authentication, protect/test backups,
+   monitor privileged activity, secure DNS/directory traffic, and restrict network access.

@@ -58,6 +58,11 @@ For each task in a fictional organization's security plan, choose a tool from th
 what evidence it could provide, what it cannot establish alone, and what authorization or privacy
 limits apply. Include at least one task from networking, web applications, forensics, and monitoring.
 
+**Steps and deliverable:** Create four rows—one for each required category—with the security
+question, selected tool, expected evidence, limitation, and safe data source. Use supplied reports
+or fictional scenarios rather than contacting external services. Submit the completed selection
+table and a two-sentence explanation of why the tool fits each question.
+
 ## Key takeaways
 
 - The source lists diagnostic, DNS, administration, log, malware-analysis, and forensic utilities.
@@ -70,3 +75,12 @@ limits apply. Include at least one task from networking, web applications, foren
 2. Which tools support endpoint visibility or digital forensics and response?
 3. Which tools can help analyze packets, web requests, disk evidence, and memory?
 4. What should be considered before choosing a security tool?
+
+## Suggested answers
+
+1. `dig` and `nslookup` are listed for DNS analysis.
+2. `osquery` supports endpoint visibility; Velociraptor supports digital forensics and response.
+3. Wireshark or tcpdump analyzes packets; Burp Suite or OWASP ZAP inspects web requests; Autopsy
+   examines disk evidence; Volatility analyzes memory captures.
+4. Consider the question, scope and authorization, evidence quality, privacy, operational risk,
+   tool limits, and the skills/resources available.

@@ -76,6 +76,12 @@ review passive-scan alerts, examine the evidence behind each alert, and prepare 
 alerts are not automatically confirmed vulnerabilities; verify evidence before reporting a finding.
 Do not use active scanning outside a system you own or have explicit permission to assess.
 
+**Steps and deliverable:** In the local training app, proxy ordinary page navigation only. Select
+one passive alert, record its title, affected component, supplied evidence, and one safe
+verification question. Mark it confirmed, potential, or unverified based only on the evidence, then
+write one remediation recommendation. Submit a sanitized one-page finding; do not send exploit
+payloads or run an active scan.
+
 ## Key takeaways
 
 - Burp Suite and ZAP help inspect web traffic and test application security.
@@ -90,3 +96,18 @@ Do not use active scanning outside a system you own or have explicit permission 
 3. How do passive and active scanning differ?
 4. How do Burp Suite and OWASP ZAP differ according to the source?
 5. Why should an alert not be reported as a confirmed vulnerability without verification?
+
+## Suggested answers
+
+1. Proxy observes/intercepts requests; Repeater resends a selected request for controlled analysis;
+   Decoder transforms encoded data; Comparer highlights differences; Sequencer evaluates token
+   randomness.
+2. A request asks a server for an operation; a response is its reply; headers carry metadata;
+   cookies are client-held values; a session represents server-recognized state; parameters carry
+   input values.
+3. Passive scanning analyzes observed traffic without sending test requests; active scanning sends
+   tests and can affect the target.
+4. Both support web testing; Burp Suite and OWASP ZAP differ in licensing, interface, and features.
+   Select based on scope and need, not an assumption that their outputs prove a flaw.
+5. Alerts can be false positives or lack context; verify the security property and evidence before
+   describing an issue as confirmed.

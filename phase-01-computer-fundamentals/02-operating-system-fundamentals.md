@@ -87,6 +87,9 @@ Use a computer or virtual machine you own or are authorized to administer:
 
 Do not change permissions on shared or production systems.
 
+**Deliverable:** A one-page worksheet naming a process and its threads, distinguishing kernel from
+shell, sorting the filesystem examples, and proposing least-privilege access for the fictional file.
+
 ## Key takeaways
 
 - The OS manages hardware and provides an environment for applications.
@@ -103,3 +106,12 @@ Do not change permissions on shared or production systems.
 3. What does virtual memory do according to the source?
 4. Name two operations that can be requested through system calls.
 5. What can read, write, and execute permissions allow?
+
+## Answer key
+
+1. The kernel manages core system resources; a shell is an interface for users to issue commands.
+2. A process is a running program; a thread is an execution unit within a process.
+3. Virtual memory lets the OS manage a process's address space and use storage to support memory
+   when RAM is insufficient.
+4. Examples include opening or reading a file, creating a process, and accessing system resources.
+5. Read views contents, write modifies them, and execute runs a file (or enters a directory).

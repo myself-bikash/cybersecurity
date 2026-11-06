@@ -111,6 +111,12 @@ These are local system-administration tasks, not instructions to test another sy
 7. Take a VM snapshot.
 8. Configure an isolated lab network and confirm vulnerable systems are not publicly reachable.
 
+**Steps and deliverable:** Before installing any intentionally vulnerable target, draw the VM
+network and mark which adapter is isolated. Create a snapshot, use the local inspection commands
+above, and record only the VM's own interface, route, and process information. Submit the diagram,
+a short setup checklist, and one paragraph explaining how you verified the target is not bridged
+to a public network. Do not connect vulnerable VMs to the internet.
+
 ## Key takeaways
 
 - A lab reduces risk by separating training systems from real organizations.
@@ -125,3 +131,14 @@ These are local system-administration tasks, not instructions to test another sy
 3. Why must intentionally vulnerable VMs be isolated?
 4. How do Kali Linux and Ubuntu differ?
 5. What can local system-inspection commands tell you?
+
+## Suggested answers
+
+1. A lab is a controlled, isolated environment for learning and authorized tests.
+2. The recommended setup includes Kali Linux, Ubuntu Server, a Windows VM, and a vulnerable
+   training application such as OWASP Juice Shop.
+3. Isolation prevents vulnerable services and test traffic from affecting or exposing real systems.
+4. Kali is specialized for security work and includes many tools; Ubuntu is general-purpose. Neither
+   is automatically more secure.
+5. They can show local identity, interfaces, routes, running processes, and listening sockets; they
+   do not establish that a system is vulnerability-free.

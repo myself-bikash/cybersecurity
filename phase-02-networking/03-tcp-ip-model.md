@@ -42,6 +42,9 @@ Using a table or diagram:
    appropriate TCP/IP layer.
 3. Explain which layers are grouped together in the TCP/IP model.
 
+**Deliverable:** A four-row mapping table that places all seven protocol examples and shows the OSI
+layers grouped by each TCP/IP layer.
+
 ## Key takeaways
 
 - The source's TCP/IP model has Network Access, Internet, Transport, and Application layers.
@@ -56,3 +59,12 @@ Using a table or diagram:
 3. Where does IP fit in the source's model?
 4. Which OSI layers are grouped into TCP/IP Application?
 5. How does the source distinguish the purpose of OSI from TCP/IP?
+
+## Answer key
+
+1. Network Access, Internet, Transport, and Application.
+2. Network Access.
+3. Internet.
+4. OSI Application, Presentation, and Session (Layers 7, 6, and 5).
+5. OSI is a seven-layer reference model; TCP/IP describes the four-layer protocol architecture
+   used for internet communication.

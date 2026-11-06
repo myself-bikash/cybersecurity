@@ -50,10 +50,16 @@ security automation, and incident response.
 In an authorized Windows VM:
 
 1. Use the source example to view running processes.
-2. Explain which PowerShell syllabus topics are involved in reading output and handling errors.
-3. Plan a report that summarizes a permitted event-log sample without including sensitive data.
-4. Do not modify Registry settings, accounts, or Active Directory objects in a production
+2. Select a harmless property from the displayed local process information and write down a brief
+   summary; do not stop or change processes.
+3. Identify which PowerShell syllabus topics are involved in reading output and handling errors.
+4. Plan a report that summarizes a synthetic or instructor-provided event-log sample without
+   including sensitive data.
+5. Do not modify Registry settings, accounts, or Active Directory objects in a production
    environment.
+
+**Deliverable:** A short process observation, the syllabus topics used, and a sample event-log
+summary plan with its data source and privacy boundary.
 
 ## Key takeaways
 
@@ -68,3 +74,11 @@ In an authorized Windows VM:
 2. Which topics does the source include for PowerShell?
 3. What does `Get-Process` display in the source?
 4. Name three cybersecurity applications listed in the source.
+
+## Answer key
+
+1. A Microsoft command-line shell and scripting language.
+2. Variables, data types, operators, control flow, functions, collections, pipelines, objects,
+   files, errors, administration, Registry, Active Directory, event logs, and automation.
+3. Currently running processes.
+4. Examples include system monitoring, event-log analysis, automation, and incident response.

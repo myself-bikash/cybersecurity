@@ -156,8 +156,35 @@ the covered material and is not represented as the original PDF assessment.
 
 ### Answer key
 
-1. B · 2. A · 3. B · 4. A · 5. A · 6. A · 7. B · 8. A · 9. B · 10. A · 11. A · 12. A ·
-13. A · 14. A · 15. A · 16. C · 17. A · 18. B
+1. B — A SOC coordinates monitoring, detection, investigation, and response.
+2. A — L1 work commonly starts with triage and escalation.
+3. B — An alert is a signal to investigate, not proof.
+4. A — A log records an event in a system or application.
+5. A — Event 4624 records successful logon.
+6. A — `journalctl` reads systemd journal entries.
+7. B — Normalization maps different formats to a common structure.
+8. A — Correlation relates events to identify a pattern.
+9. B — Hunting proactively searches beyond existing alerts.
+10. A — EDR focuses on endpoint telemetry and response.
+11. A — XDR correlates data across security domains.
+12. A — Sysmon records detailed Windows activity for later analysis.
+13. A — IOCs are artifacts; IOAs are behavior patterns.
+14. A — ATT&CK tactics describe adversary objectives.
+15. A — Detection engineering defines telemetry and logic, tests it, deploys, and improves it.
+16. C — Preparation establishes people, plans, controls, and procedures before an incident.
+17. A — Containment limits impact or spread.
+18. B — A false negative is malicious activity the detection failed to identify.
+
+## Practical review
+
+1. Use a short synthetic event set containing a failed login, a successful login, and an endpoint
+   alert.
+2. Build a timeline and mark each item as raw event, detection, or analyst conclusion.
+3. List missing context, one benign explanation, and the escalation threshold.
+4. Propose one detection improvement and one privacy-safe reporting practice.
+
+**Deliverable:** a one-page triage memo with timeline, evidence gaps, decision rationale, and
+recommended detection improvement.
 
 ## Practical skills checklist
 

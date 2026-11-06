@@ -98,3 +98,54 @@ as the missing original quiz.
 - [ ] I understand lateral-movement detection.
 - [ ] I understand Zero Trust architecture.
 - [ ] I have completed the practical network-security lab within its authorized scope.
+
+## Practical review
+
+1. Choose a fictional organization with guest, employee, application, database, and management
+   networks.
+2. Draw the segments and list only required connections, including a DMZ if the design needs one.
+3. Add a monitoring plan naming the relevant firewall, endpoint, DNS, and authentication logs.
+4. Use a synthetic event timeline to identify one issue, a safe containment consideration, and a
+   recovery control.
+
+**Deliverable:** one diagram, an allowed-flow table, a short synthetic incident timeline, and a
+paragraph defending the proposed controls.
+
+## Answer key
+
+1. Clients, infrastructure, services, and boundaries communicate under defined policies; security
+   principles include defense in depth, least privilege, secure design, and reduced attack surface.
+2. Packet filtering uses packet fields; stateful firewalls track connections; proxies intermediate
+   traffic; NGFWs combine capabilities; WAFs focus on web application traffic.
+3. A WAF inspects HTTP/HTTPS requests and responses; a network firewall controls broader traffic
+   between networks or hosts.
+4. IDS alerts on patterns, IPS can block; signatures match known patterns, while anomaly detection
+   flags deviations from expected behavior.
+5. NAC evaluates identity and, where configured, device posture before assigning access.
+6. Remote-access VPN connects one device to a network; site-to-site VPN links networks.
+7. A tunnel does not validate endpoint health or decide that every reachable resource should be
+   authorized.
+8. WEP is obsolete/insecure; WPA is legacy; WPA2 depends on configuration; WPA3 is newer and
+   generally stronger.
+9. DNSSEC authenticates DNS data integrity; DoH and DoT protect the client-to-resolver connection.
+10. SPF authorizes sending servers, DKIM signs messages, and DMARC defines handling/reporting policy.
+11. Antivirus detects malware; EDR adds endpoint investigation/response; XDR correlates multiple
+    security domains.
+12. Examples: service reduction, exposure control, restricted administration, patching, logging,
+    data protection, and permission review.
+13. Standard accounts, controlled elevation, updates, firewalls, encryption, and limited services
+    reduce privileges or unnecessary exposure.
+14. Segmentation limits which systems can communicate, reducing paths from a compromised endpoint.
+15. Use strong authentication/MFA, least privilege, restricted exposure, patching, and monitoring.
+16. Discover assets, identify and assess weaknesses, prioritize, remediate, verify, and monitor.
+17. CVE identifies a vulnerability; CVSS communicates its technical severity.
+18. Vulnerability management handles weaknesses broadly; patch management deploys and verifies
+    software updates.
+19. Full copies all selected data; incremental copies changes since the last backup; differential
+    copies changes since the last full backup.
+20. RPO measures acceptable data-loss time; RTO measures the restoration-time target.
+21. A SIEM can correlate firewall, server, endpoint, authentication, cloud, application, and DNS logs.
+22. Preserve authorized evidence, document chain of custody, normalize timelines, corroborate
+    findings, and report limitations.
+23. Zero Trust verifies explicitly, grants least privilege, assumes breach, and reevaluates access
+    using identity, device, policy, and context.

@@ -229,6 +229,12 @@ The source recommends PortSwigger Web Security Academy labs. Use only a lab whos
 explicitly authorize the activity; the exercises above intentionally replace exploit procedures
 with defensive review and safe test design.
 
+**Steps and deliverable:** Select three exercises and complete them against local source code,
+synthetic tokens, diagrams, or supplied configuration. For each, note the security property,
+defensive control, evidence that would confirm the control, and one limitation. Submit a short
+architecture/control worksheet; do not generate exploit traffic, inspect real tokens, or test a
+production proxy.
+
 ## Key takeaways
 
 - Client-side data flow, tokens, delegated access, and API authorization require distinct controls.
@@ -249,3 +255,23 @@ with defensive review and safe test design.
 6. What is TOCTOU?
 7. Why can different HTTP parsers create a desynchronization risk?
 8. How do cache poisoning and cache deception differ?
+
+## Suggested answers
+
+1. A DOM source is a location where data enters client-side code; a sink is an operation that
+   interprets or renders the data, potentially unsafely.
+2. Boolean-based blind SQLi infers behavior from true/false response differences; time-based
+   blind SQLi infers behavior from timing. Both are conceptual categories; use parameterization
+   rather than trying them against a target.
+3. JWT is a token format; OAuth 2.0 is an authorization framework. A JWT can be used as an OAuth
+   token, but the terms are not interchangeable.
+4. `state` binds an authorization response to the initiating browser transaction and helps prevent
+   request forgery; PKCE binds code exchange to the initiating client instance.
+5. BOLA is missing authorization for a particular object; BFLA is missing authorization for a
+   function or operation.
+6. TOCTOU is a time-of-check/time-of-use flaw in which relevant state changes between validation
+   and use.
+7. If a proxy and backend parse message boundaries differently, part of a request may be
+   interpreted as another request, causing desynchronization.
+8. Cache poisoning stores attacker-influenced content for later users; cache deception tricks a
+   cache into storing or serving sensitive content under an apparently cacheable key/path.

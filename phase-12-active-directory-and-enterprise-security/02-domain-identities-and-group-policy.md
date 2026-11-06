@@ -108,6 +108,9 @@ groups, and apply a harmless screen-lock or firewall policy to a selected test O
 source-listed `gpresult` commands to review policy application. Compare the intended scope with
 the observed result; do not change production policy.
 
+**Deliverable:** a sanitized OU/group diagram, intended-versus-observed policy table, and a brief
+note explaining any scope or inheritance difference.
+
 ## Key takeaways
 
 - Groups organize identities for permissions; OUs organize directory objects and policy scope.
@@ -122,3 +125,16 @@ the observed result; do not change production policy.
 3. What are the Domain Local, Global, and Universal scopes used for?
 4. How do an OU and a security group differ?
 5. What does LSDOU mean, and what can alter ordinary policy inheritance?
+
+### Answer key
+
+1. A standard account supports ordinary work; administrator accounts perform elevated tasks;
+   service accounts run services; guest accounts are limited if enabled; managed service accounts
+   have managed credentials.
+2. Security groups assign permissions; distribution groups primarily distribute email.
+3. Domain Local groups assign permissions in their domain, Global groups organize same-domain
+   members, and Universal groups can combine members across a forest.
+4. An OU is a directory container for organization, delegation, and policy scope; a group collects
+   identities for permissions.
+5. LSDOU is Local, Site, Domain, OU processing; inheritance, enforcement, blocking, and filtering
+   affect which settings apply or prevail.

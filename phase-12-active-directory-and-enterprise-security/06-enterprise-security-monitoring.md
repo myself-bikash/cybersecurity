@@ -74,10 +74,13 @@ be investigated.
 
 ## Practical exercise
 
-Using synthetic or lab-generated logs only, build a short timeline containing a failed login,
-successful login, group change, and resource access. Label which events need corroboration and
-write a benign explanation as well as a concern to investigate. Do not query or collect logs from
-systems without authorization.
+1. Use synthetic or lab-generated logs to build a timeline with a failed login, successful login,
+   group change, and resource access.
+2. Label events that need corroboration and write both a benign explanation and a concern.
+3. Do not query or collect logs from systems without authorization.
+
+**Deliverable:** a sanitized event table and timeline with one benign explanation, one concern,
+corroborating data needed, and a clear statement of what cannot yet be concluded.
 
 ## Key takeaways
 
@@ -93,3 +96,13 @@ systems without authorization.
 3. Which event ID records a Kerberos service-ticket request?
 4. What does Event 5136 represent when auditing is configured?
 5. Why does one unusual event not prove an attack?
+
+### Answer key
+
+1. Monitor identity/authentication, privileges and group changes, DCs, GPOs, DNS, endpoint activity,
+   network connections, services, and remote access.
+2. Event 4624 is successful logon; 4625 is failed logon.
+3. Event 4769 records a Kerberos service-ticket request.
+4. Event 5136 records a directory-object modification when the relevant auditing is configured.
+5. Events may be legitimate, incomplete, or misinterpreted; account, source, destination, policy,
+   and correlated activity provide necessary context.

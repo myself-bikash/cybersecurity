@@ -1,6 +1,6 @@
 # Final Revision and Assessments
 
-## Module 2: Web-vulnerability examination
+## Module 2: Web-vulnerability examination questions
 
 Select one answer for each question. The PDF supplies answer choices but no answer key; no answers
 are marked here.
@@ -159,7 +159,17 @@ present in the reviewed source content.
 - [ ] Store, scope, rotate, monitor, and revoke API keys.
 - [ ] Complete the secure REST API project and retest its controls.
 
-## Phase 8 final reflection
+## Practical review: trace and protect one request
+
+Use a local application or a supplied synthetic request/response example. Trace one request from
+browser through API, authorization check, application logic, and data store. Mark where identity,
+object permission, input validation, and response/cache policy are enforced. Identify one possible
+failure from the lesson topics and propose a fix and safe retest.
+
+**Deliverable:** Submit a one-page annotated flow, one risk/fix entry, and the expected retest
+result. Do not use real accounts, production traffic, or live targets.
+
+## Phase 8 final reflection questions
 
 Answer in your own words:
 
@@ -169,6 +179,46 @@ Answer in your own words:
 4. How would you make a payment or one-time redemption operation safe under concurrency?
 5. How should an application distinguish public cacheable responses from private responses?
 6. What scope and evidence rules make a security assessment authorized and reproducible?
+
+## Suggested answers
+
+### Module 2: Web-vulnerability examination
+
+1. **Open Worldwide Application Security Project** is the correct choice; OWASP is the organization's
+   name.
+2. **Unsafe construction of SQL queries using untrusted input**; input can change query meaning.
+3. **Time-based blind SQLi**; it infers behavior from response timing.
+4. **Stored XSS**; untrusted content is saved and later rendered.
+5. **Help verify that a state-changing request is legitimate**; a token helps distinguish an
+   intended form submission from a cross-site request.
+6. **IDOR**; access to a referenced object was not properly authorized.
+7. **Gaining access to higher-privilege functionality**; that is vertical escalation.
+8. **Enabling debug mode in production**; it may expose sensitive diagnostic information.
+9. **A server being tricked into making unintended requests**; SSRF abuses server-side request
+   behavior.
+10. **Cloud instance metadata service**; it may expose sensitive instance information if reachable.
+11. **A file's actual content may not match its extension**; validate content and safe handling.
+12. **Moving outside the intended directory**; traversal bypasses the intended path boundary.
+13. **Converting serialized data back into an object or data structure**.
+14. **Argon2id**; it is purpose-built for password hashing, unlike fast general-purpose hashes.
+15. **Business-logic vulnerability**; the workflow fails to enforce a required payment condition.
+16. **Parameterized queries**; input values remain separate from SQL syntax.
+
+### Final reflection
+
+1. Enforce rendering controls in the browser, authentication/authorization and validation in the
+   API/application, least privilege and integrity in the database, and secure configuration/secrets
+   in deployment; no single layer replaces the others.
+2. Authentication proves who is calling; object-level authorization must still decide whether that
+   identity may read or change the particular record.
+3. Confidentiality: authorization and encryption; integrity: validation, transactions, and audit;
+   availability: limits, resilience, backups, and monitoring.
+4. Check and consume the entitlement in one atomic transaction with a uniqueness/state constraint;
+   return a single clear outcome for concurrent requests.
+5. Cache only intentionally public responses with correct keys/directives; mark personalized or
+   sensitive responses private/no-store as appropriate and verify intermediary behavior.
+6. Define written targets, actions, exclusions, and time window; use minimal sanitized evidence,
+   record sources and methods, and report limits so another reviewer can reproduce the safe check.
 
 ## Phase completion checklist
 

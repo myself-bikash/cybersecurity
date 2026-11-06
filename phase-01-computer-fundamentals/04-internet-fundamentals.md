@@ -78,6 +78,9 @@ Use a paper diagram or a browser on a device you own:
 This is a conceptual exercise. Do not inspect or interfere with network traffic that you are not
 authorized to access.
 
+**Deliverable:** A request/response diagram with each of the seven stages numbered, the URL parts
+labeled, and a note showing where packets carry data.
+
 ## Key takeaways
 
 - The internet connects devices that communicate using standard protocols.
@@ -93,3 +96,12 @@ authorized to access.
 3. Identify the protocol, domain, and path in `https://www.example.com/login`.
 4. Name two browsers and two web servers from the source.
 5. What is a data packet?
+
+## Answer key
+
+1. A client requests a service; a server provides it.
+2. Enter address; DNS finds an IP; browser connects; sends HTTP(S) request; server processes it;
+   server responds; browser displays the page.
+3. Protocol: `https`; domain: `www.example.com`; path: `/login`.
+4. Browsers include Chrome and Firefox; web servers include Apache and Nginx.
+5. A packet is a smaller unit of network data carrying information needed for delivery.

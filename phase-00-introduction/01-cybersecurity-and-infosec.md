@@ -62,6 +62,9 @@ Using a fictional organization or a system you are authorized to assess:
    both.
 4. Do not inspect real accounts, networks, or records unless you have explicit authorization.
 
+**Deliverable:** A two-column asset inventory with each item labeled *cybersecurity*, *information
+security*, or *both*, plus one sentence explaining a label.
+
 ## Key takeaways
 
 - Cybersecurity protects digital systems and assets from cyber threats.
@@ -76,3 +79,13 @@ Using a fictional organization or a system you are authorized to assess:
 3. How does ethical hacking fit within cybersecurity?
 4. What distinguishes a white-hat hacker from a black-hat hacker?
 5. Why is authorization necessary even when a tester has good intentions?
+
+## Answer key
+
+1. Cybersecurity focuses on digital assets and threats; information security also covers physical
+   and spoken information.
+2. Confidentiality, integrity, and availability: limiting access, preserving correctness, and
+   keeping information accessible when needed.
+3. Ethical hacking is authorized security testing, a subset of the broader cybersecurity field.
+4. A white hat has explicit permission; a black hat acts without it for harmful or unlawful ends.
+5. Good intentions do not grant permission or prevent harm to systems and their owners.

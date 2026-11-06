@@ -137,9 +137,13 @@ unexpected changes and suspicious queries, protect DNS servers, and maintain red
 
 ## Practical exercise
 
-In the isolated lab, diagram a domain sign-in and service-access flow. Label LDAP, DNS SRV records,
-the KDC, a TGT, and a service ticket. Then use synthetic examples to classify statements as
-authentication or authorization. Do not collect credentials or probe a real directory.
+1. In the isolated lab, diagram a domain sign-in and service-access flow; label LDAP, DNS SRV
+   records, the KDC, a TGT, and a service ticket.
+2. Use synthetic examples to classify statements as authentication or authorization and explain why.
+3. Do not collect credentials or probe a real directory.
+
+**Deliverable:** an annotated sign-in diagram and a short table classifying at least four synthetic
+actions as authentication or authorization, with a reason for each.
 
 ## Key takeaways
 
@@ -157,3 +161,16 @@ authentication or authorization. Do not collect credentials or probe a real dire
 4. What are a TGT and a service ticket?
 5. How do Kerberos and NTLM differ?
 6. Why are DNS SRV records important to AD?
+
+### Answer key
+
+1. DC is Domain Component, OU Organizational Unit, CN Common Name, DN Distinguished Name, and RDN
+   Relative Distinguished Name; together they locate an object in a directory hierarchy.
+2. LDAP commonly uses TCP 389, LDAPS TCP 636, and Global Catalog LDAP 3268/3269; encryption depends
+   on secure configuration and TLS.
+3. Authentication verifies identity; authorization decides what that identity may access.
+4. A TGT lets a client request service tickets; a service ticket is presented to a particular
+   service, subject to authorization.
+5. Kerberos uses KDC-issued tickets; NTLM uses challenge-response and may remain for compatibility.
+6. DNS SRV records advertise domain services so clients can locate domain controllers and
+   authentication services.

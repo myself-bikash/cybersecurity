@@ -63,6 +63,9 @@ For each question, choose a tool from the table and explain why:
 
 Do not capture traffic that belongs to others or scan systems without explicit permission.
 
+**Deliverable:** A five-row decision table listing the question, selected tool, why it fits, and the
+authorization boundary for the task.
+
 ## Key takeaways
 
 - The source lists tools for packet analysis, discovery, connectivity, configuration, DNS, and web
@@ -77,3 +80,11 @@ Do not capture traffic that belongs to others or scan systems without explicit p
 3. Which tools query DNS?
 4. What does traceroute show?
 5. What authorization is required before using Nmap?
+
+## Answer key
+
+1. Wireshark and tcpdump.
+2. `ipconfig` displays Windows configuration; `ip` displays/manages Linux configuration.
+3. `nslookup` and `dig`.
+4. The network hops between the local device and a destination.
+5. Use it only on systems owned by the learner or explicitly authorized for testing.

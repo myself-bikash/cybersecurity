@@ -112,6 +112,11 @@ The source's scenario is a company with 50 employees and one internal database. 
 Apply the CIA triad, AAA, least privilege, defense in depth, and Zero Trust. Do not access a real
 company database.
 
+**Steps and deliverable:** For each question, name the security principle, propose one control, and
+explain what it protects. Then draw a simple login-to-database flow showing identity checks,
+permission checks, logging, and a backup or recovery path. Submit the six answers and the diagram
+using only fictional details.
+
 ## Key takeaways
 
 - CIA describes confidentiality, integrity, and availability.
@@ -127,3 +132,16 @@ company database.
 3. What is non-repudiation?
 4. How does least privilege limit damage after an account compromise?
 5. What does “Never Trust, Always Verify” mean in the source's example?
+
+## Suggested answers
+
+1. Confidentiality limits access to authorized parties; integrity protects correctness from
+   unauthorized change; availability keeps information usable when needed.
+2. Authentication checks identity, authorization checks permitted actions, and accounting records
+   activity.
+3. Non-repudiation provides evidence linking an action to a party, such as a verifiable digital
+   signature; it is not an absolute guarantee that a person cannot dispute the action.
+4. A compromised account has only its assigned permissions, limiting the data and functions an
+   attacker could reach.
+5. Access is evaluated for the user, device, and requested resource rather than granted merely
+   because the request originates on company Wi-Fi.

@@ -228,6 +228,12 @@ necessary context is missing.
 </details>
 </details>
 
+**Steps and deliverable:** Complete the six exercises using synthetic messages, public defensive
+reports, or an isolated VM. Label every assertion as observed, reported, or unknown. Submit the
+phishing warning-sign list, malware/credential-attack comparison charts, four conceptual diagrams,
+privilege comparison, and one short zero-day response summary. Include one control for each threat;
+do not open links, attempt logins, generate traffic, or reproduce an exploit.
+
 ## Key takeaways
 
 - A threat may cause harm, a vulnerability is a weakness, and an attack is an attempt to exploit it.
@@ -247,3 +253,21 @@ necessary context is missing.
 6. What can a MitM attack affect, and which safeguards help?
 7. Compare vertical and horizontal privilege escalation.
 8. What makes a zero-day distinct from an old unpatched weakness?
+
+## Suggested answers
+
+1. A threat is a potential cause of harm, a vulnerability is a weakness, and an attack is an
+   attempt to use a weakness or otherwise cause harm.
+2. A Trojan disguises itself as legitimate software, a worm can spread between systems, and a
+   rootkit is designed to hide privileged malicious activity.
+3. Social engineering manipulates people; phishing is a common message-based form of it.
+4. Brute force tries many candidate passwords against an account; password spraying tries a small
+   set of common candidates across accounts. Both should be countered with strong unique passwords,
+   MFA, and detection/rate controls.
+5. DoS disrupts service from one source or system; DDoS uses multiple distributed sources.
+6. MitM can expose or alter communications. Authenticated encryption, certificate validation, and
+   trusted networks reduce risk but do not protect compromised endpoints.
+7. Vertical escalation gains greater privilege; horizontal escalation reaches another account or
+   resource at a similar privilege level.
+8. A zero-day is a vulnerability not yet known to or addressed by the responsible vendor at the
+   relevant time; an old unpatched weakness has a known fix or mitigation that was not applied.

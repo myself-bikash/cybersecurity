@@ -81,6 +81,9 @@ Do not reproduce an exploit, contact affected systems, or test a third party. Th
 citations are incomplete; add references only after they have been independently identified and
 approved.
 
+**Deliverable:** Five incident summaries, each with a verified source citation, one threat concept,
+one defensive lesson, and a note distinguishing confirmed facts from claims.
+
 ## Key takeaways
 
 - The source uses these incidents to illustrate ransomware, patching, supply-chain compromise,
@@ -96,3 +99,14 @@ approved.
 3. What third-party access path does the source describe in the Target case?
 4. How does the source distinguish NotPetya from ransomware?
 5. Why should a case-study report identify and verify its references?
+
+## Answer key
+
+1. SolarWinds.
+2. Equifax.
+3. The source describes stolen credentials from an HVAC vendor being used to access a Target vendor
+   billing portal, followed by movement into Target's network.
+4. The source calls NotPetya a destructive wiper disguised as ransomware, rather than malware whose
+   primary purpose is to collect a ransom.
+5. Identifiable, checked references let readers verify claims and distinguish evidence from
+   interpretation.

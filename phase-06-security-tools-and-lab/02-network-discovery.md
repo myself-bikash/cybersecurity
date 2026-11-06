@@ -94,6 +94,11 @@ confirmed vulnerability.
 5. Review a sample Nikto report and classify each item as confirmed, potential, false positive, or
    informational based on available evidence.
 
+**Steps and deliverable:** Using only the provided sanitized reports, make a table with each
+observation, evidence, confidence, and a question for the system owner. Distinguish a service
+discovery result from a vulnerability finding and explain why each Nikto alert needs verification.
+Submit the annotated table and a short scope note; do not run discovery tools against a live target.
+
 ## Key takeaways
 
 - Nmap identifies network exposure; Gobuster and ffuf find web resources; Nikto checks server
@@ -109,3 +114,15 @@ confirmed vulnerability.
 3. What is the difference between service and version detection?
 4. How do Gobuster and ffuf differ?
 5. What does Nikto check, and why must findings be verified?
+
+## Suggested answers
+
+1. Nmap identifies hosts and reports network/service information within the authorized scope.
+2. Open means an application is listening; closed means reachable but no application is listening;
+   filtered means probes cannot determine the state, often because a filter blocks them.
+3. Service detection identifies the application/protocol; version detection estimates its version.
+   Both may be uncertain.
+4. Gobuster and ffuf can automate discovery using wordlists; their options and workflows differ.
+   Use them only in an authorized lab.
+5. Nikto checks web-server configuration and known issues. Results may be stale, context-dependent,
+   or false positives, so confirm safely with owner-provided evidence.

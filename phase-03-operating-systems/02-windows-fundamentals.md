@@ -207,6 +207,10 @@ Use a Windows VM you own or are explicitly authorized to administer:
 Do not edit the Registry, change firewall policy, or modify accounts on a production system without
 explicit authorization.
 
+**Deliverable:** A Windows concept map identifying architecture and filesystem examples, account
+roles, and the built-in tool for each administrative task, with one sentence about safe Registry
+handling.
+
 ## Key takeaways
 
 - Windows includes kernel, executive, drivers, services, and user applications.
@@ -225,3 +229,16 @@ explicit authorization.
 5. What does Group Policy allow administrators to do?
 6. How does the source describe NTLM and Kerberos?
 7. What is the purpose of PowerShell?
+
+## Answer key
+
+1. Hardware, kernel, executive, device drivers, system services, and user applications.
+2. Modify permits reading, writing, and deleting; Full Control also includes changing permissions.
+3. CPU, RAM, disk, network, processes, and startup applications, among other items listed.
+4. Operating-system events, including application, security, system, and setup events.
+5. Centrally configure users' and computers' settings, such as password, software, and security
+   policies.
+6. NTLM is a Windows authentication protocol; Kerberos is a ticket-based network authentication
+   protocol.
+7. PowerShell is a command-line shell and scripting language for Windows administration,
+   automation, and security operations.

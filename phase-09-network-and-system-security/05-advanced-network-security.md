@@ -161,9 +161,15 @@ are included.
 
 ## Practical exercise
 
-Using synthetic network-flow records and security events, identify which events need investigation.
-Build a timeline, note what additional evidence is needed, preserve the original sample, and write
-a short defensive report. Include a possible segmentation or Zero Trust policy improvement.
+1. Select a small synthetic set of network-flow records and security events; preserve the original.
+2. Mark which events need investigation and arrange them into a timeline.
+3. List missing evidence and distinguish observed facts from interpretations.
+4. Recommend one segmentation or Zero Trust policy improvement.
+
+Write a short defensive report using only synthetic records.
+
+**Deliverable:** a chronological table separating observed facts from interpretation, a list of
+missing evidence, and one least-privilege policy recommendation. Use only synthetic records.
 
 ## Key takeaways
 
@@ -183,3 +189,19 @@ a short defensive report. Include a possible segmentation or Zero Trust policy i
 5. What are the four Zero Trust principles in this lesson?
 6. Name the Zero Trust policy components and their purposes.
 7. How do network monitoring and network forensics differ?
+
+### Answer key
+
+1. Identify, collect, preserve, examine, analyze/reconstruct, and report; recording handling and
+   uncertainty keeps the investigation traceable.
+2. PCAP stores captured packets; flow records summarize communications such as endpoints, ports,
+   protocol, and volume.
+3. Examples include unusual remote logins, unexpected SMB/RDP, abnormal administration, cross-
+   segment traffic, and failed logins followed by success; each needs context.
+4. It defines which identities and devices may connect to which resources under what conditions.
+5. Verify explicitly, least privilege, assume breach, and continuous evaluation.
+6. The policy engine decides, administrator establishes or terminates access, enforcement point
+   applies the decision, identity provider verifies identity, device security evaluates health, and
+   monitoring records activity.
+7. Monitoring observes ongoing activity; forensics preserves and analyzes evidence to reconstruct
+   an event.

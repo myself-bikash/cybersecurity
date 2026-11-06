@@ -152,3 +152,22 @@ validation, and business logic → database.
 - [ ] Fixes are retested.
 - [ ] Secrets and personal data are not included in the report.
 - [ ] The final report distinguishes confirmed findings from hypotheses.
+
+## Review questions
+
+1. What must be established before beginning any project assessment?
+2. How should a project finding distinguish observation, hypothesis, impact, and root cause?
+3. What makes a safe retest useful after remediation?
+4. Which artifacts make the final project reproducible without disclosing secrets?
+
+## Suggested answers
+
+1. Written scope and authorization, permitted actions, exclusions, time window, data rules, and stop
+   contact; use a local owned/isolated target or explicit permission.
+2. State what was directly observed, what remains an inference, the plausible consequence in
+   context, and the design/code/configuration cause supported by evidence.
+3. Retest the original security property in the same authorized environment, record the result,
+   and note any limitations; do not broaden scope.
+4. A scope statement, architecture/control notes, sanitized test cases and results, finding records,
+   remediation changes, retest status, and limitations—without credentials, personal data, or
+   sensitive payloads.

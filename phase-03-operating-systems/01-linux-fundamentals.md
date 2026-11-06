@@ -241,6 +241,10 @@ Use a Linux virtual machine you own or are explicitly authorized to administer:
 5. Review the SSH and hardening recommendations without applying remote-access changes to a
    production server.
 
+**Deliverable:** A two-page lab note with the Linux architecture and filesystem diagram, permission
+example from the disposable directory, user/group observation, process/service/log observation, and
+three hardening recommendations with their rationale.
+
 ## Key takeaways
 
 - Linux distributions combine the Linux kernel with software and tools for different purposes.
@@ -259,3 +263,18 @@ Use a Linux virtual machine you own or are explicitly authorized to administer:
 6. What is the purpose of `systemctl`?
 7. What are system logs used for?
 8. What is Bash scripting?
+
+## Answer key
+
+1. Hardware, kernel, system libraries, shell, utilities, and applications.
+2. Ubuntu is general-purpose; Kali is Debian-based for security work; Debian is community-developed
+   and stable; Fedora is a modern distribution with newer technologies.
+3. `/etc` stores configuration; `/var` holds logs and changing data; `/home` holds regular users'
+   personal directories.
+4. `chmod` changes permissions; `chown` changes ownership.
+5. Root can make broad system changes, so unnecessary privilege increases the impact of mistakes or
+   compromise.
+6. `systemctl` queries or manages systemd services.
+7. They record system events used to understand errors and investigate suspicious activity or
+   incidents.
+8. Bash scripting combines shell commands and programming constructs to automate tasks.

@@ -53,6 +53,13 @@ Choose one fictional cybersecurity task from the table and identify the language
 closest to it. Explain your choice using only the purposes listed in the source. Do not write or run
 code against systems or data you are not authorized to use.
 
+1. Select one task, such as summarizing a synthetic log or describing a webpage form.
+2. Match it to a language or technology and cite its purpose from the table.
+3. Name one prerequisite topic and one next step from the recommended order.
+
+**Deliverable:** A three-row learning plan (task, technology with rationale, and next step) that
+distinguishes essential, important, advanced, and optional skills.
+
 ## Key takeaways
 
 - Programming supports automation, code understanding, and security analysis.
@@ -67,3 +74,11 @@ code against systems or data you are not authorized to use.
 3. Which language is listed as optional?
 4. When does the source recommend learning C and Assembly?
 5. What does the source say learners should be able to do with code?
+
+## Answer key
+
+1. It supports automation, code reading, debugging, and recognizing insecure implementations.
+2. Python, Bash, and PowerShell.
+3. Go.
+4. When studying low-level security, reverse engineering, and related topics after basic scripting.
+5. Read code, write scripts, debug problems, and identify insecure implementations.

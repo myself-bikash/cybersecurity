@@ -74,6 +74,9 @@ Use a fictional diagram or a home/lab network you own or are authorized to docum
 
 Do not access or modify a network you do not own or have permission to administer.
 
+**Deliverable:** A labeled network diagram showing applicable network types, topology, device roles,
+and the boundary between the local network and other networks.
+
 <details class="scenario-card">
 <summary>Quick check: which device would you investigate?</summary>
 
@@ -107,3 +110,11 @@ scenario alone does not establish a firewall or routing failure.
 3. What is the difference between a router and a switch?
 4. What does an access point connect?
 5. What function does the source assign to a firewall?
+
+## Answer key
+
+1. Local Area Network, Wide Area Network, Metropolitan Area Network, and Personal Area Network.
+2. Star devices connect to a central switch; mesh devices have multiple connections to one another.
+3. A switch forwards frames within a LAN; a router forwards packets between networks.
+4. An access point connects wireless devices to a wired network using Wi-Fi.
+5. A firewall monitors and controls traffic according to security rules.

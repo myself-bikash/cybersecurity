@@ -129,6 +129,9 @@ to use:
 4. Describe whether the evidence is consistent with allowed or blocked communication.
 5. Do not capture other people's traffic or use scanning tools outside the authorized lab.
 
+**Deliverable:** An annotated training-capture worksheet showing the handshake, relevant ports,
+evidence of allowed/blocked communication, and limits of what the evidence proves.
+
 ## Key takeaways
 
 - Ports identify communication endpoints; open ports alone do not prove a vulnerability.
@@ -145,3 +148,12 @@ to use:
 3. What do IDS and IPS each do?
 4. How does a VLAN relate to a physical switched network?
 5. What does the source say a VPN does not guarantee?
+
+## Answer key
+
+1. Open means a service accepts connections; closed means reachable with no listener; filtered means
+   a device prevents determining the state.
+2. SYN, SYN-ACK, ACK.
+3. An IDS detects and alerts; an IPS can detect and automatically block malicious traffic.
+4. A VLAN splits one physical switched network into multiple logical networks.
+5. A VPN does not guarantee complete anonymity.

@@ -13,6 +13,12 @@ By the end of this lesson, you should be able to:
 JavaScript is a programming language primarily used to make websites interactive. The source
 identifies it as important for web-application security.
 
+The **Document Object Model (DOM)** is the browser's structured representation of a page; JavaScript
+can read or change that representation in response to events. The Same-Origin Policy (SOP) limits
+how one origin's scripts can interact with resources from another origin. Browser storage and
+cookies are client-side data mechanisms; a session is the server- or application-recognized period
+of interaction, often associated with a cookie or token.
+
 ## JavaScript syllabus
 
 1. Variables and data types.
@@ -48,6 +54,9 @@ Using a local sample page or instructor-provided material:
 3. Label browser storage, cookies, sessions, and the Same-Origin Policy as separate topics.
 4. Explain at a high level why client-side code and authentication deserve security review.
 
+**Deliverable:** A one-page client-side flow diagram labeling an event, DOM change, fetch/request,
+and data-storage boundary, with one security observation.
+
 Use only a local or explicitly authorized application. Do not attempt to exploit XSS.
 
 ## Key takeaways
@@ -64,3 +73,12 @@ Use only a local or explicitly authorized application. Do not attempt to exploit
 3. What are the Fetch API and HTTP requests listed alongside?
 4. Which browser topics does the source connect to security?
 5. What does the source say JavaScript helps learners understand about XSS?
+
+## Answer key
+
+1. The DOM is the browser's structured representation of a document that scripts can inspect or
+   change.
+2. Asynchronous JavaScript, promises, and `async`/`await`.
+3. They let browser code make requests and exchange data with web services.
+4. Browser storage, cookies, sessions, the Same-Origin Policy, and client-side authentication.
+5. It helps learners understand how browsers execute JavaScript and how XSS relates to web content.

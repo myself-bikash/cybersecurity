@@ -14,10 +14,6 @@
 components communicate. A typical environment may contain client computers, servers, routers,
 switches, firewalls, wireless access points, network storage, and internet connections.
 
-The source contains a standalone reference fragment titled “DMZ, NAT & PAT” but no accompanying
-definitions or explanation. DMZ appears again in the source's segmentation example; NAT and PAT
-are recorded as an unresolved source gap rather than expanded from outside material.
-
 **Network architecture security** is the practice of designing and protecting that infrastructure
 to reduce unauthorized access, data exposure, and network attacks.
 
@@ -39,6 +35,12 @@ to reduce unauthorized access, data exposure, and network attacks.
 - **Least privilege:** grant users and systems only the access they need.
 - **Secure by design:** include security requirements in the architecture from the beginning.
 - **Minimize attack surface:** remove unnecessary services, ports, accounts, and connections.
+
+An organization may place public-facing services in a **DMZ**, a separately controlled network
+segment between less-trusted external networks and more-trusted internal systems. **Network
+Address Translation (NAT)** maps addresses between networks; **Port Address Translation (PAT)**
+also uses port numbers so multiple private hosts can share a public address. NAT/PAT changes
+addressing, but is not a substitute for firewall policy or authentication.
 
 ## 2. Firewall architecture
 
@@ -122,10 +124,16 @@ RADIUS, and EAP as related technologies.
 
 ## Practical exercise
 
-Use a diagram or local lab configuration to map one network you own. Identify its routers, switches,
-firewall, access points, servers, and endpoints; mark trust boundaries; and document which
-connections are required. Propose default-deny rules and a NAC policy for compliant versus
-non-compliant devices. Do not probe a real organizational network.
+1. Use a diagram or local lab configuration to map a network you own; label routers, switches,
+   firewall, access points, servers, and endpoints.
+2. Mark the trust boundaries and DMZ (if present), and list required source, destination, and
+   service for each connection.
+3. Propose default-deny rules and a NAC policy for compliant versus non-compliant devices.
+
+Do not probe a real organizational network.
+
+**Deliverable:** one annotated topology diagram, a short allowed-connection table, and a paragraph
+explaining one firewall decision and one NAC decision.
 
 ## Key takeaways
 
@@ -145,3 +153,15 @@ non-compliant devices. Do not probe a real organizational network.
 5. How do IDS and IPS differ?
 6. What are signature-based and anomaly-based detection?
 7. What does NAC evaluate before granting device access?
+
+### Answer key
+
+1. Clients, servers, routers, switches, firewalls, access points, and related services; these
+   components provide connectivity and apply controls.
+2. Multiple complementary controls reduce reliance on any single security layer.
+3. Packet filtering evaluates packet fields; stateful filtering also tracks connection state.
+4. A network firewall controls traffic boundaries; a WAF focuses on HTTP/HTTPS application
+   requests and responses.
+5. IDS detects and alerts; IPS can also take a blocking or preventive action.
+6. Signature detection matches known patterns; anomaly detection flags deviations from a baseline.
+7. NAC evaluates device or user identity and, where configured, device health against access policy.

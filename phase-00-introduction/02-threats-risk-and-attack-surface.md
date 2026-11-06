@@ -120,6 +120,9 @@ Use a fictional company scenario. Do not probe a real system or send test messag
 5. Suggest non-invasive safeguards or monitoring questions, without attempting to reproduce the
    attack.
 
+**Deliverable:** A one-page scenario map listing the asset, threat, vulnerability, potential impact,
+relevant lifecycle stages, and two defensive questions.
+
 <details class="scenario-card">
 <summary>Quick check: separate the risk from the evidence</summary>
 
@@ -154,3 +157,13 @@ account compromise is still a hypothesis until corroborating evidence supports i
 3. How does credential stuffing differ from brute force in the source's descriptions?
 4. What are the seven Cyber Kill Chain stages?
 5. What information is missing from the source's sentence about how cyberattacks are categorized?
+
+## Answer key
+
+1. A threat is a potential cause of harm; a vulnerability is a weakness it could take advantage of.
+2. Examples include open ports, employee email accounts, unpatched software, and exposed APIs.
+3. Credential stuffing reuses stolen username-password pairs; brute force systematically guesses
+   credentials.
+4. Reconnaissance, weaponization, delivery, exploitation, installation, command and control, and
+   actions on objectives.
+5. The source does not state the basis for its categorization; the list alone cannot supply it.

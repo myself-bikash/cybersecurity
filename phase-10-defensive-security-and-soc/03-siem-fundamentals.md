@@ -126,9 +126,13 @@ installation and sizing; the source's external references are incomplete.
 
 ## Practical exercise
 
-Use synthetic authentication events with timestamps and outcomes. Normalize them into a common
-table, design an illustrative correlation rule, and identify possible benign explanations. Record
-the data sources and context an analyst would need before escalating an alert.
+1. Select synthetic authentication events with timestamps and outcomes.
+2. Normalize them into a table with consistent fields.
+3. Write an illustrative correlation rule and identify one benign explanation.
+4. List the data sources and context an analyst needs before escalating an alert.
+
+**Deliverable:** a normalized event table, one plain-language correlation rule with its needed
+fields/time window, and a brief false-positive/context note.
 
 ## Key takeaways
 
@@ -146,3 +150,19 @@ the data sources and context an analyst would need before escalating an alert.
 5. How does correlation differ from a detection rule?
 6. Why should a SIEM alert be investigated before classification?
 7. How do threat hunting and alert-driven investigation differ?
+
+### Answer key
+
+1. Security Information and Event Management; the name describes collecting and analyzing security
+   event data.
+2. Examples: sources, collectors, ingestion, normalization, storage, correlation, rules, dashboards,
+   and alerting.
+3. Agent-based collection uses software on a host; agentless collection uses forwarding/API
+   mechanisms; cloud collection uses service integrations or connectors.
+4. Normalization maps different source formats into a consistent structure for search and analysis.
+5. Correlation relates events; a detection rule specifies logic for identifying a suspicious
+   condition, often using correlated events.
+6. A rule can lack context or produce false positives; analysts must validate the activity before
+   classifying it.
+7. Hunting proactively tests a hypothesis without requiring an alert; alert-driven investigation
+   starts from a detection notification.

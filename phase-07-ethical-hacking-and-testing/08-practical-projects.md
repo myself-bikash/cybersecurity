@@ -78,6 +78,13 @@ Combine the earlier project artifacts in a report containing:
 
 Deliverable: a complete report that another security professional can understand and review.
 
+**Safe completion sequence:** Start with the fictional scope, then use supplied reports and
+training data to complete Projects 1–4. Mark every finding as confirmed, suspected, or
+informational, and explain what the evidence does not establish. Assemble only those sanitized
+artifacts into Project 5. Final deliverables are the lab-scope record, register, case study,
+prioritized remediation plan, and final report; no active scanning, exploitation, password
+recovery, or privilege-gain attempts are part of this exercise.
+
 ## Source-listed tools
 
 The source says to learn tools by purpose, not memorize them:
@@ -118,3 +125,17 @@ No operational commands or exploit procedures are included.
 3. How can a validation case study be completed without executing a PoC?
 4. What should a remediation plan and final report contain?
 5. Why are LinPEAS/WinPEAS findings not proof by themselves?
+
+## Suggested answers
+
+1. A safe project uses a virtual environment such as Kali and a deliberately vulnerable training
+   target on an isolated network; this lesson substitutes pre-generated reports for live scanning.
+2. Record an ID, asset, description, evidence, CVE/CVSS if applicable, business impact, severity,
+   and remediation.
+3. Use a public advisory and supplied report, inspect its harmless evidence, identify root cause
+   and uncertainty, then recommend remediation and define a safe retest.
+4. A remediation plan identifies root cause, prioritized fixes, owner, business benefit, and
+   verification criteria; the report also documents scope, method, findings, evidence, severity,
+   retest, limitations, and conclusion.
+5. They identify possible risky configurations; context and manual authorized verification are
+   needed to determine whether a vulnerability is present and exploitable.

@@ -67,14 +67,56 @@ files.
 
 ## Practical lab: local log summary
 
-Using a sample log file supplied for training or one you are authorized to analyze:
+Use a small synthetic log file you create yourself, with a few harmless labels such as `INFO`,
+`WARNING`, and `ERROR`; do not use personal or operational logs.
 
-1. Plan how a program could read the file and count occurrences of a selected event.
-2. Identify which Python concepts from this lesson are needed.
-3. Describe how the program should handle a missing or malformed file.
-4. Specify what a summary report should contain without including passwords or personal data.
+1. Write down the count of each label before coding.
+2. Plan or write a local script that reads the file and counts those labels.
+3. Describe how it handles a missing or malformed file.
+4. Compare the program's counts with your manual counts and note any difference.
 
-Do not process logs that you do not have permission to access.
+For a runnable starting point, save these lines as `sample.log`:
+
+```text
+INFO service started
+WARNING retry scheduled
+ERROR sample failure
+INFO health check passed
+```
+
+Save this script as `summarize.py` in the same folder, then run `python summarize.py`:
+
+```python
+from collections import Counter
+from pathlib import Path
+
+labels = {"INFO", "WARNING", "ERROR"}
+counts = Counter()
+
+try:
+    with Path("sample.log").open(encoding="utf-8") as log_file:
+        for line_number, line in enumerate(log_file, start=1):
+            fields = line.split(maxsplit=1)
+            if not fields:
+                continue
+            label = fields[0]
+            if label not in labels:
+                print(f"Skipping unrecognized line {line_number}")
+                continue
+            counts[label] += 1
+except OSError as error:
+    print(f"Could not read sample.log: {error}")
+else:
+    for label in sorted(labels):
+        print(f"{label}: {counts[label]}")
+```
+
+Expected counts are `ERROR: 1`, `INFO: 2`, and `WARNING: 1`. Try renaming `sample.log` to check
+the missing-file message, then restore its name. This example reads only the synthetic file in the
+current folder.
+
+**Deliverable:** The synthetic input, a short script or pseudocode, its count summary, and one
+sentence explaining its missing-file behavior.
 
 ## Key takeaways
 
@@ -92,3 +134,13 @@ Do not process logs that you do not have permission to access.
 4. Which HTTP methods does the source list?
 5. What topics does the source include under socket programming?
 6. Why is logging useful?
+
+## Answer key
+
+1. A list is an ordered collection; a dictionary maps keys to values.
+2. Exception handling responds to errors; the listed keywords are `try`, `except`, `finally`, and
+   `raise`.
+3. A module is reusable code; a package organizes related modules.
+4. GET, POST, PUT, and DELETE.
+5. IP addresses, ports, client-server communication, and TCP/UDP sockets.
+6. Logging records events for debugging, monitoring, and security investigations.

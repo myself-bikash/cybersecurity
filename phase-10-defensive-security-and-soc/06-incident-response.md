@@ -78,10 +78,13 @@ This is a defensive scenario, not an instruction to create or run ransomware.
 
 ## Practical exercise
 
-Use a synthetic incident timeline with an unusual sign-in, an endpoint alert, a network event, and
-a file change. Identify what is known, what remains uncertain, which evidence should be preserved,
-and which response stage applies. Write a short incident report without using real credentials or
-personal data.
+1. Use a synthetic timeline with an unusual sign-in, endpoint alert, network event, and file change.
+2. Separate known facts from uncertainties and identify evidence to preserve.
+3. Select the current response stage and note approvals or coordination required.
+4. Write a short report without real credentials or personal data.
+
+**Deliverable:** a one-page report with timeline, facts versus hypotheses, evidence to preserve,
+current response stage, approval/coordination needs, and next steps.
 
 <details class="scenario-card">
 <summary>Quick check: an alert arrives during business hours</summary>
@@ -117,3 +120,15 @@ outside your authority.
 4. What information should a response report contain?
 5. How do false positives and false negatives differ?
 6. What is the purpose of lessons learned?
+
+### Answer key
+
+1. Preparation, identification, containment, eradication, recovery, lessons learned; the sequence
+   moves from readiness through restoration and improvement.
+2. Containment limits impact or spread; eradication removes malicious activity and its underlying
+   cause.
+3. Shutdown may remove volatile data or interrupt an important service; follow approved procedures.
+4. Include scope, timeline, affected assets, evidence, analysis, uncertainty, actions, and
+   recommendations.
+5. A false positive flags legitimate activity; a false negative misses malicious activity.
+6. Lessons learned identifies control gaps and improvements to reduce recurrence and improve response.

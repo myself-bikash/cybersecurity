@@ -47,12 +47,16 @@ file permissions, and automating system maintenance.
 
 ## Practical lab: script planning
 
-For a Linux VM you own or are authorized to administer:
+In a disposable directory in a Linux VM you own or are authorized to administer:
 
-1. Outline a script that reports whether a chosen local file exists.
-2. Identify the Bash concepts needed from the syllabus.
-3. Describe how the script should report an error and finish with an appropriate exit status.
-4. Do not change accounts, permissions, services, or files outside the lab.
+1. Create a harmless test file and note its path.
+2. Write or outline a script that reports whether that file exists, then try it with a nonexistent
+   path.
+3. Identify the condition, argument or variable, output, and exit-status behavior.
+4. Keep all files inside the disposable directory; do not change accounts, permissions, or services.
+
+**Deliverable:** The script or pseudocode, the two test paths, expected messages, and the intended
+success/error exit statuses.
 
 ## Key takeaways
 
@@ -67,3 +71,11 @@ For a Linux VM you own or are authorized to administer:
 2. Which text-processing utilities does the source name?
 3. What are pipes and redirection topics in the syllabus?
 4. Name three cybersecurity applications of Bash from the source.
+
+## Answer key
+
+1. Conditions choose actions; loops repeat instructions.
+2. `grep`, `sed`, and `awk`.
+3. They connect command output to other commands or files, supporting text and data flow.
+4. Examples include log analysis, collecting system information, checking permissions, or
+   maintenance automation.

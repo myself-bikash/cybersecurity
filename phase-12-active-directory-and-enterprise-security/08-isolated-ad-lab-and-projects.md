@@ -108,6 +108,9 @@ For any project, record:
 - Observations, interpretation, and limitations.
 - Recommended defensive changes.
 
+**Lesson deliverable:** select one project and provide its listed output plus the report template
+fields; include lab scope, isolation verification, evidence, and limitations.
+
 ## Key takeaways
 
 - Use only test identities and machines that you own or are authorized to assess.
@@ -124,3 +127,16 @@ For any project, record:
 4. Which events are used in the authentication investigation?
 5. What authorization boundary applies to BloodHound data collection?
 6. What should a defensive investigation report distinguish?
+
+### Answer key
+
+1. A Windows Server VM hosting AD DS/DNS and a separate domain-joined Windows client are sufficient
+   for the initial directory lab.
+2. Host-only/internal networking prevents lab traffic and changes from reaching ordinary or
+   production networks.
+3. It should show how users, groups, OUs, and resource permissions relate and how access is
+   verified.
+4. Events 4624 and 4625 show successful and failed logons; Kerberos-related events may add
+   authentication context.
+5. Collect only from an owned or explicitly authorized isolated domain, or use synthetic data.
+6. A report should distinguish observations, interpretations, uncertainties, and recommendations.

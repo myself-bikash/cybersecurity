@@ -88,6 +88,9 @@ Use flash cards or a worksheet, not a live network:
 3. Explain the TCP/UDP and FTP/SFTP comparisons using the source's distinctions.
 4. Describe what DNS and DHCP provide in a fictional home network.
 
+**Deliverable:** A protocol-role worksheet with each protocol categorized, plus a short fictional
+home-network walkthrough showing the separate DNS and DHCP jobs.
+
 ## Key takeaways
 
 - Protocols define communication rules and perform different roles.
@@ -103,3 +106,13 @@ Use flash cards or a worksheet, not a live network:
 3. Which protocol sends email, and which protocols retrieve it?
 4. How does the source distinguish FTP from SFTP?
 5. What roles do LDAP, SMB, SNMP, and ICMP have?
+
+## Answer key
+
+1. TCP provides reliable, ordered delivery and can retransmit lost data; UDP does not guarantee
+   delivery.
+2. DNS resolves domain names to IP addresses.
+3. SMTP sends; IMAP synchronizes/retrieves and POP3 retrieves, commonly by downloading.
+4. The source describes standard FTP as unencrypted and SFTP as secure file transfer over SSH.
+5. LDAP accesses directory information; SMB shares files/printers; SNMP monitors/manages devices;
+   ICMP supports diagnostics and error reporting.

@@ -145,6 +145,11 @@ Use the fictional SecureTech case or sanitized sample evidence. Create a short r
 scope, one evidence-backed finding, severity reasoning, remediation, retest status, and limitations.
 Do not perform active testing.
 
+**Steps and deliverable:** Complete the report in this order: define the fictional scope, state the
+evidence source, describe one finding and its uncertainty, justify severity, recommend a fix, and
+record a retest status. Submit the short report plus a checklist showing which topics need review.
+Do not perform active testing or use real organization data.
+
 ## Key takeaways
 
 - Authorization, scope, and safe boundaries apply throughout every testing stage.
@@ -158,3 +163,38 @@ Do not perform active testing.
 2. What evidence would you need before prioritizing a real vulnerability?
 3. Which assessment activities must be stopped unless explicitly authorized?
 4. What part of your report would help a decision-maker act on the findings?
+
+## Suggested answers
+
+1. Answers vary. Distinguish such pairs as authentication/authorization, scanning/validation, and
+   vulnerability/exploit by stating what each does and what evidence it provides.
+2. Confirmed affected asset and version/configuration, exposure, reliable evidence, business impact,
+   existing controls, and credible threat context; record remaining uncertainty.
+3. Any activity outside the written scope, permission, time window, or stated safety limits must
+   stop. This includes testing connected systems, destructive work, denial-of-service, and any
+   unapproved data access.
+4. A concise impact statement, justified priority, specific remediation owner/action, and retest
+   status help a decision-maker prioritize action.
+
+### Quick answer guide to the 30-question assessment
+
+1–5. Ethical hacking is authorized security work; penetration testing is a scoped validation
+   engagement. Main stages are plan/authorize, reconnaissance, scan/enumerate, assess, validate,
+   report, remediate/retest. Scope defines targets/actions; rules set operational limits. One
+   system's permission does not cover linked systems. Assessment identifies possibilities; testing
+   validates selected impact.
+6–10. Reconnaissance gathers target information; passive uses existing sources, active interacts
+   with systems. OSINT is public-source information; DNS enumeration gathers DNS records; WHOIS
+   provides limited registration data.
+11–15. Host discovery identifies responsive hosts; port scanning reports port states; open means a
+   service responds, not that it is vulnerable. Service detection identifies the application.
+   Network maps show authorized hosts, services, links, ownership, and uncertainty.
+16–20. A vulnerability is a weakness; CVE identifies a cataloged issue; CVSS estimates technical
+   severity. Authentication verifies identity, authorization controls access. Prioritize using
+   evidence, exposure, impact, asset value, controls, and uncertainty.
+21–25. An exploit takes advantage of a weakness; a PoC demonstrates it; RCE is unintended remote
+   code execution; privilege escalation increases access; vertical is higher privilege, horizontal
+   is another same-level account/resource.
+26–30. An executive summary communicates business risk and actions; evidence supports a finding;
+   technical findings include scope, evidence, impact, cause, severity rationale, fix, and retest;
+   remediation addresses the weakness; retesting checks the fix within scope.

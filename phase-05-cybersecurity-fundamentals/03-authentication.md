@@ -166,6 +166,12 @@ advantages.
 Use only accounts and systems you are authorized to study; do not capture real authentication
 secrets.
 
+**Steps and deliverable:** For task 1, label each example's factor category and note whether two
+factors are genuinely independent. For tasks 2–5, use a fictional organization and draw one labeled
+flow per protocol. Mark where identity is asserted, where authorization is granted, and which
+artifact is passed; do not include credentials or real tokens. Submit a comparison table and the
+diagrams.
+
 ## Key takeaways
 
 - Authentication verifies identity; factors may be knowledge, possession, inherence, location, or
@@ -184,3 +190,21 @@ secrets.
 5. Why is OAuth 2.0 not, by itself, a full login protocol?
 6. How do OIDC and SAML differ?
 7. Name the Kerberos components and summarize the ticket flow.
+
+## Suggested answers
+
+1. The source's categories are something you know (password/PIN), have (security key/device), and
+   are (biometric). Two examples from one category are not two-factor authentication.
+2. 2FA requires two distinct factor categories; MFA requires at least two, so 2FA is one specific
+   case of MFA.
+3. Biometrics are convenient and tied to physical traits, but can be difficult to change after
+   compromise and can have false matches or accessibility/privacy concerns.
+4. An identity provider authenticates the user and gives participating services a trusted
+   assertion or token, avoiding separate passwords at each service.
+5. OAuth 2.0 delegates authorization to access resources; by itself it does not define a standard
+   user-authentication identity layer. OIDC adds that layer.
+6. OIDC is an identity layer on OAuth 2.0 commonly using ID tokens; SAML is a separate
+   XML-based federation protocol using assertions. Both can support SSO.
+7. The client obtains a ticket-granting ticket from the KDC's authentication service, exchanges it
+   with the ticket-granting service for a service ticket, then presents that ticket to the target
+   service.

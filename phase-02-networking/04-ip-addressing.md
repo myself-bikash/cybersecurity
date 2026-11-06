@@ -83,6 +83,9 @@ Using only the examples in this lesson and a fictional or authorized lab network
 
 Do not reconfigure a production network or use addresses to access a system without authorization.
 
+**Deliverable:** A completed worksheet classifying the sample addresses and a diagram labeling
+gateway, NAT, local IPv4-to-MAC resolution, and the `/24` network/host split.
+
 ## Key takeaways
 
 - IP addresses identify interfaces on IP networks.
@@ -98,3 +101,12 @@ Do not reconfigure a production network or use addresses to access a system with
 3. What does `/24` mean in the source's example?
 4. When does a computer use its default gateway?
 5. What does ARP help an IPv4 device discover?
+
+## Answer key
+
+1. IPv4 uses 32 bits; IPv6 uses 128 bits.
+2. `10.0.0.0/8`, `172.16.0.0/12`, and `192.168.0.0/16` (the ranges listed in the table).
+3. The first 24 bits identify the network portion in that example; the remaining bits identify
+   hosts within it.
+4. It sends traffic to the gateway when the destination is outside its local network.
+5. The MAC address associated with a local IPv4 address.

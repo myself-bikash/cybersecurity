@@ -189,3 +189,31 @@ frameworks to organizational environments.
 4. How do the immediate, improvement, and long-term recommendations differ?
 5. Which framework helps with each part of the assessment?
 6. What evidence would you need before assigning ratings in a real assessment?
+
+## Suggested answers
+
+1. Customer records and business-critical systems are high-importance because their loss,
+   alteration, or unavailability could directly affect customers and operations.
+2. Weak passwords, inadequate authentication, and access-control weaknesses can enable account
+   compromise or make its impact greater.
+3. The illustrative table rates phishing/account compromise, ransomware, data theft, weak
+   passwords, unauthorized administrator access, and server-failure data loss as high priority.
+4. Immediate actions address urgent exposure; improvements strengthen near-term controls; long-term
+   recommendations address broader architecture, process, and resilience.
+5. NIST CSF can organize outcomes, ISO 27001 an ISMS and risk process, and CIS Controls practical
+   safeguards; choose based on the assessment need.
+6. Confirmed assets and configurations, exposure, existing controls, incident evidence, business
+   impact, and credible threat information are needed; otherwise label assumptions and uncertainty.
+
+## Project workflow and deliverable
+
+1. Use only the fictional TechNova scenario; list five assets and their owners and business
+   importance.
+2. For each of two risks, write a threat–weakness–impact statement and label evidence versus
+   assumptions.
+3. Assign likelihood and impact using the lesson's qualitative scale, explain each rating, and
+   note uncertainties.
+4. Recommend a control, accountable role, priority, and time horizon for each high-priority risk.
+5. Map recommendations to an appropriate framework and submit the completed risk register, a
+   one-page prioritized action plan, and a short evidence/assumption note. Do not assess a real
+   company or gather real personal data.

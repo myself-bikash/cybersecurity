@@ -183,6 +183,13 @@ security resources.
 6. Study application risks using OWASP Juice Shop or another intentionally vulnerable local lab.
    Test only systems you own or have explicit permission to assess.
 
+**Steps and deliverable:** Pick one fictional company and one documented public incident. Produce
+one CSF function map, five example ISMS policy titles, a lab-only asset inventory, an ATT&CK
+technique mapping based on the public report, and a seven-stage Kill Chain diagram with a defensive
+control at each stage. For OWASP, use only a local training app and record one observed control
+question without attempting exploit payloads. Submit the maps, diagrams, and a short note explaining
+the limits of each framework.
+
 ## Key takeaways
 
 - NIST CSF organizes risk management into six functions.
@@ -201,3 +208,22 @@ security resources.
 6. What is the purpose of the OWASP Top 10?
 7. Which framework would you use for organization-wide risk, practical safeguards, adversary
    behavior, or application security, and why?
+
+## Suggested answers
+
+1. Govern, Identify, Protect, Detect, Respond, and Recover.
+2. An ISMS is a managed system of policies, responsibilities, risk decisions, and continual
+   improvement for information security; ISO/IEC 27001 specifies requirements for establishing,
+   operating, and improving it.
+3. CIS Implementation Groups help organizations choose and prioritize safeguards appropriate to
+   their resources and risk.
+4. Tactics describe an adversary's goal, techniques describe how it pursues that goal,
+   sub-techniques provide more specific variants, and procedures are observed implementations.
+5. Reconnaissance, weaponization, delivery, exploitation, installation, command and control, and
+   actions on objectives. Defenders can reduce risk at every stage; the model is not a complete
+   incident-response plan.
+6. OWASP Top 10 raises awareness of common, important web-application risk categories; it is not a
+   complete compliance standard or proof that an application is secure.
+7. NIST CSF organizes enterprise risk outcomes, CIS Controls gives prioritized safeguards, ATT&CK
+   describes observed adversary behavior, and OWASP focuses on application risks. Select based on
+   the question; they complement rather than replace one another.

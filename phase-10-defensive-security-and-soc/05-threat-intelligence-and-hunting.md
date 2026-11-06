@@ -108,9 +108,13 @@ available fields, logging configuration, expected behavior, and acceptable false
 
 ## Practical exercise
 
-Use synthetic login, endpoint, and network events. Form one hunting hypothesis, list the telemetry
-needed, note evidence for and against the hypothesis, and document a conclusion. Map only the
-observed behavior to a high-level ATT&CK tactic; do not generate attack activity.
+1. Use synthetic login, endpoint, and network events to form one hunting hypothesis.
+2. List the telemetry needed and evidence both for and against the hypothesis.
+3. Record a conclusion or state why the result remains unresolved.
+4. Map only observed behavior to a high-level ATT&CK tactic; do not generate attack activity.
+
+**Deliverable:** a one-page hunt record containing hypothesis, scope, data sources, evidence for
+and against, conclusion/uncertainty, and a high-level tactic mapping.
 
 ## Key takeaways
 
@@ -130,3 +134,19 @@ observed behavior to a high-level ATT&CK tactic; do not generate attack activity
 5. What should a documented threat hunt include?
 6. What are the stages of detection engineering?
 7. Why should confidential files not be submitted to public analysis services without authorization?
+
+### Answer key
+
+1. Threat intelligence is analyzed information used for decisions; a threat feed is one source that
+   supplies updated threat-related data.
+2. IOCs are observable artifacts that may indicate compromise; IOAs describe suspicious behavior.
+3. A tactic is an objective, a technique is a way to pursue it, and a sub-technique is a more
+   specific variation.
+4. Examples: Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion,
+   Credential Access, Discovery, Lateral Movement, Collection, Exfiltration, and Impact.
+5. A hunt records a hypothesis, scope, data sources, method, supporting/contradicting evidence, and
+   a conclusion or unresolved status.
+6. Understand behavior, identify telemetry, design logic, test, measure errors, deploy, review, and
+   improve.
+7. A service may retain or redistribute submitted material; unauthorized sharing can expose
+   confidential or proprietary data.

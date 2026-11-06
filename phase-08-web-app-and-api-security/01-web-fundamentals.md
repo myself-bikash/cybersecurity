@@ -258,6 +258,12 @@ Use your own application or a local training application:
 5. Create two local origins, observe a CORS restriction, then configure the backend to allow only the
    intended local frontend origin.
 
+**Steps and deliverable:** Perform each activity using local test pages, synthetic data, and
+browser developer tools. Record the request/response method, status, relevant headers, cookie
+attributes, and which local origin is allowed. Submit a one-page annotated request flow and a short
+note explaining that CORS is a browser response-sharing policy, not server-side authorization.
+Do not use a production account or collect another person's traffic.
+
 ## Key takeaways
 
 - Client/server communication, HTTP, methods, headers, cookies, and sessions form the foundation
@@ -277,3 +283,23 @@ Use your own application or a local training application:
 6. What is the difference between authentication and authorization?
 7. How do HTTP and WebSockets differ?
 8. What are SOP and CORS, and what does CORS not do?
+
+## Suggested answers
+
+1. The browser sends a request to the application server; the server may read/write the database
+   and returns a response for the browser to render.
+2. A request specifies an operation and carries headers/body to a server; a response returns a
+   status, headers, and possibly a body.
+3. GET, HEAD, OPTIONS, and TRACE are defined as safe methods; GET, HEAD, OPTIONS, TRACE, PUT, and
+   DELETE are idempotent by HTTP semantics. Actual applications still must implement methods
+   correctly.
+4. Domain and Path limit where cookies are sent; Secure requires secure transport; HttpOnly blocks
+   ordinary script access; SameSite constrains cross-site sending.
+5. A session lets a server associate later requests with stored state, typically using a session
+   identifier carried by a cookie.
+6. Authentication verifies identity; authorization decides what that identity may do.
+7. HTTP is request/response; WebSockets begin with an HTTP handshake and then support a persistent,
+   bidirectional connection.
+8. SOP restricts a page's access to cross-origin data; CORS lets a server grant specific browser
+   origins access to responses. CORS does not authenticate users or enforce server-side
+   authorization.

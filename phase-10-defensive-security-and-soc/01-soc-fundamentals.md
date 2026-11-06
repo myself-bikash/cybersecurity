@@ -95,10 +95,13 @@ confirmed.
 
 ## Practical exercise
 
-Use a synthetic failed-login alert with a fictional account and source. Decide what context is
-needed, identify possible benign explanations, list related logs to review, select an initial
-classification, and state what would justify escalation. Do not generate repeated login attempts
-against real accounts.
+1. Start with a synthetic failed-login alert for a fictional account and source.
+2. List context to verify and at least one possible benign explanation.
+3. Identify related logs to review and choose a provisional classification.
+4. State what evidence would justify escalation; do not generate login attempts against real accounts.
+
+**Deliverable:** a brief triage note with observed facts, benign explanations, evidence to collect,
+provisional severity, and an escalation decision.
 
 ## Key takeaways
 
@@ -115,3 +118,17 @@ against real accounts.
 4. What is alert triage?
 5. Why is a security alert not automatically an incident?
 6. How do classification and escalation differ?
+
+### Answer key
+
+1. A SOC is a team or function that monitors, detects, investigates, and coordinates response; it
+   gives an organization a coordinated view of security activity.
+2. Examples: data sources, collectors, SIEM, detection rules, alert management, analysts, incident
+   response, and threat intelligence.
+3. L1 triages and escalates; L2 investigates and scopes; L3 handles advanced investigations,
+   hunting, and detection improvement.
+4. Alert triage is the initial assessment of an alert's relevance, reliability, and priority.
+5. Alerts indicate possible suspicious activity; context and corroboration determine whether an
+   incident occurred.
+6. Classification labels type/severity; escalation transfers work to a more appropriate analyst or
+   response team.

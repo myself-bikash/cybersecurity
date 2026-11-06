@@ -46,6 +46,9 @@ Using a local page or an instructor-provided sample:
 2. Describe which parts define structure/content and which affect appearance/layout.
 3. Explain how a form collects user input without submitting it to an external service.
 
+**Deliverable:** An annotated local-page sketch identifying at least four HTML structures, two CSS
+rules or layout features, and the form fields that would collect input.
+
 ## Key takeaways
 
 - HTML defines page structure and content.
@@ -60,3 +63,14 @@ Using a local page or an instructor-provided sample:
 3. Name four HTML elements/topics in the source.
 4. Name four CSS topics in the source.
 5. Why does the source consider forms and input fields relevant to security?
+
+## Answer key
+
+1. HyperText Markup Language; it defines web-page structure and content.
+2. Cascading Style Sheets; it controls visual appearance and layout.
+3. Examples include headings, paragraphs, links, tables, forms, input fields, attributes, and
+   document structure.
+4. Examples include selectors, colors/fonts, margins/padding, the box model, Flexbox, Grid, and
+   responsive design.
+5. Forms and fields collect information, so understanding them helps explain where user input enters
+   an application.

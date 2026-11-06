@@ -140,10 +140,14 @@ and limiting which accounts administer servers.
 
 ## Practical exercise
 
-In a synthetic graph or isolated test domain, inspect a deliberately created group-permission
-relationship, explain why it could be risky, and propose a least-privilege change. Then review
-synthetic logon and service-installation records for a possible lateral-movement signal. Do not
-collect production directory data or generate attack activity.
+1. In a synthetic graph or isolated test domain, inspect a deliberately created group-permission
+   relationship.
+2. Explain why it could be risky and propose a least-privilege change.
+3. Review synthetic logon and service-installation records for a possible lateral-movement signal.
+4. Do not collect production directory data or generate attack activity.
+
+**Deliverable:** a relationship diagram, a prioritized defensive finding with proposed remediation,
+and a short synthetic-log timeline that separates observed evidence from hypotheses.
 
 ## Key takeaways
 
@@ -160,3 +164,17 @@ collect production directory data or generate attack activity.
 4. What does an ACL describe?
 5. What can BloodHound show, and what can it not prove by itself?
 6. Name four warning signs that may warrant lateral-movement investigation.
+
+### Answer key
+
+1. Kerberoasting concerns service-ticket data for SPN-associated accounts; AS-REP Roasting concerns
+   accounts without Kerberos pre-authentication.
+2. PtH reuses stolen hash-derived credential material; PtT reuses Kerberos tickets.
+3. Unconstrained delegation is broad; constrained delegation is limited to configured services;
+   resource-based constrained delegation lets the target resource define allowed delegators.
+4. An ACL lists identities and the operations they are allowed to perform on an object.
+5. BloodHound can map potential relationships and privilege paths; the graph alone does not prove
+   exploitability or that controls are absent.
+6. Examples: unusual logons across many hosts, unexpected privileged logons/group changes, remote
+   service installation, unusual SMB/RDP/PowerShell activity, or unfamiliar workstation access;
+   corroborate each with context.

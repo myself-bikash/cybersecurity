@@ -57,6 +57,9 @@ Record:
 
 Do not include passwords, personal information, or secrets in your report.
 
+**Deliverable:** A lab report containing the environment and authorization boundary, completed
+tasks, observations for all five tasks, errors or omissions, and one lesson learned from each module.
+
 ## Key takeaways
 
 - The syllabus asks learners to install Linux and Windows VMs, study booting, manage users and
@@ -71,3 +74,13 @@ Do not include passwords, personal information, or secrets in your report.
 2. Which Phase 1 concepts are involved in user and permission management?
 3. Why should process termination be approached cautiously?
 4. What information should be included in the lab report, and what should be excluded?
+
+## Answer key
+
+1. Install Linux and Windows VMs; describe booting; create/review users and permissions; monitor
+   processes and resources.
+2. Account identity, groups, file permissions, and least privilege from the OS lesson.
+3. A process may be a required system service or application; stopping it can interrupt work or
+   damage system availability.
+4. Include the lab boundary, task status, observations, errors, and lessons; exclude passwords,
+   personal information, and secrets.

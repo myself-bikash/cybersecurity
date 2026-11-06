@@ -106,6 +106,11 @@ Review permissions, group membership, file ownership, service configurations, sc
 privileged-execution settings. Document unsafe configurations and safe fixes. Do not attempt to
 gain privileges or use the source's privilege-enumeration commands.
 
+**Steps and deliverable:** Compare a standard account with the administrator/root account using
+read-only settings and supplied training evidence. For each finding, record the setting, affected
+privilege boundary, risk, and least-privilege fix. Submit a permissions comparison table and a
+brief remediation note; do not try to change permissions or obtain elevated access.
+
 ## Key takeaways
 
 - Vertical escalation gains higher privileges; horizontal escalation reaches another user's
@@ -123,3 +128,19 @@ gain privileges or use the source's privilege-enumeration commands.
 4. What can make scheduled tasks or services risky?
 5. What are UAC, ACL, access token, and SYSTEM?
 6. What credential risks and defenses does the source list?
+
+## Suggested answers
+
+1. Vertical escalation gains a higher privilege level; horizontal escalation reaches another
+   identity or resource at a similar level.
+2. Root is Linux's privileged account; user/group represent identities and collections; sudo
+   authorizes selected elevated commands; SUID/SGID alter the execution identity/group context;
+   capabilities grant specific privileges without full root.
+3. In `rwxr-xr-x`, the triplets are owner, group, and other permissions; each grants read, write,
+   and execute respectively.
+4. Excessive write access, unsafe ownership, weak permissions, or untrusted task inputs can let an
+   unauthorized user influence privileged execution.
+5. UAC prompts/controls elevation on Windows; ACLs define access permissions; an access token
+   carries identity and privileges; SYSTEM is a highly privileged Windows service account.
+6. Risks include reused/exposed credentials and excessive privileges. Defenses include unique
+   credentials, MFA, secret protection, least privilege, patching, and monitoring.

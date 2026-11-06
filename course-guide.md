@@ -20,6 +20,26 @@ Keep notes concise: a diagram, a few definitions, one example, and one uncertain
 useful than copying a page of text. On lesson pages, the **Mark this lesson complete** control saves
 progress locally in your browser.
 
+## Learn each topic by explaining and doing it
+
+For every topic, make sure your notes answer four questions:
+
+1. **What does it mean?** Define the term in plain language, then name its purpose.
+2. **How is it different?** Compare it with the closest related idea so the boundary is clear.
+3. **What does it look like?** Give a short example and explain what the example does—and does not—show.
+4. **How can I practice it safely?** Complete the lesson activity with a diagram, configuration
+   checklist, annotated sample, short script, timeline, or report as evidence of your work.
+
+When answering a review question, state the definition first, apply it to the example or scenario,
+and explain your reasoning. For investigation questions, separate **observed evidence** from
+**interpretation**, identify what remains unknown, and suggest a proportionate next step. A good
+answer shows understanding; copying a term or guessing a tool name is not enough.
+
+Use the lesson's worked examples and answer checks to compare your reasoning. If a lesson does not
+provide a worked answer for an open-ended prompt, use the four questions above as a self-check and
+record any assumptions you made. Practical work must stay within the lesson's stated authorization
+and safety boundaries; a synthetic-data or diagram-based alternative is valid practice.
+
 ## Course roadmap
 
 | Stage | Phases | What changes as you progress |

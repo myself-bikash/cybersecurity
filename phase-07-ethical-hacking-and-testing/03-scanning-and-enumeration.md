@@ -105,6 +105,11 @@ On paper or with a sanitized lab report:
 3. Identify listed services and explain their purpose.
 4. Note any OS-detection limitations.
 5. Create a simple network map.
+
+**Steps and deliverable:** Use only the supplied sanitized report. Put each listed host and
+service on a diagram; label state, evidence source, and uncertainty. Add one owner question for any
+unexpected service, and distinguish observed facts from scanner guesses. Submit the annotated map
+and a short note describing what the report cannot prove. Do not scan a live network.
 6. Produce a network-discovery report that separates observations from conclusions.
 
 Do not run scans against public or third-party systems. Executable scanning exercises from the
@@ -125,3 +130,18 @@ source are intentionally replaced with supplied results.
 4. What are vulnerability scanning and service enumeration?
 5. Why is an open port not automatically a vulnerability?
 6. What information should a network map include?
+
+## Suggested answers
+
+1. Host discovery checks which hosts appear responsive; port scanning reports states of selected
+   ports.
+2. Open means a listener responded; closed means reachable with no listener; filtered means a
+   filter prevents a determination; open|filtered and closed|filtered indicate the probe cannot
+   distinguish the paired states.
+3. Service detection identifies the application/protocol; version detection estimates its release.
+4. Vulnerability scanning compares evidence with known weaknesses; service enumeration collects
+   details about exposed services.
+5. A port can be required and correctly secured; risk depends on the service, configuration,
+   exposure, controls, and business context.
+6. Include scoped hosts, links, services/ports, ownership, purpose, evidence source, confidence,
+   and known dependencies.

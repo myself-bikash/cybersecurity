@@ -41,8 +41,8 @@ systems.
 
 ## Project 5: create a virtual network
 
-Connect two virtual machines in an isolated virtual network and test communication between those
-VMs. Document the network diagram and the permitted scope.
+In an isolated virtual network you own or are authorized to administer, connect two virtual
+machines and test only their communication. Document the network diagram and permitted scope.
 
 ## Progress checklist
 
@@ -52,6 +52,10 @@ VMs. Document the network diagram and the permitted scope.
 - [ ] Identified DNS queries and responses.
 - [ ] Scanned only an owned or explicitly authorized lab network.
 - [ ] Connected two virtual machines and tested their communication.
+
+**Deliverable:** A project log with one section per project, the approved scope or training-data
+source, a diagram or observation, the result, and any safety limitation. Mark incomplete projects as
+not attempted rather than testing an unapproved system.
 
 ## Recommended learning order
 
@@ -83,3 +87,12 @@ The source suggests the following study plan:
 3. What is the required scope for the Nmap project?
 4. How many days does the source allocate to networking tools?
 5. What is the total duration in the source's suggested plan?
+
+## Answer key
+
+1. Capture packets; analyze a TCP handshake; identify DNS requests; scan an owned/authorized lab;
+   create an isolated virtual network.
+2. SYN, SYN-ACK, ACK.
+3. Only the learner's own isolated lab network or systems explicitly authorized for the project.
+4. Three days.
+5. Eighteen days.

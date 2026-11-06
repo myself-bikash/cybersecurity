@@ -111,6 +111,11 @@ Use a fictional domain or purpose-built training dataset:
 3. Review fictional registration information.
 4. Identify technologies from non-invasive sample data.
 5. Create an asset inventory.
+
+**Steps and deliverable:** Use only the fictional domain/data provided. Copy each record with its
+source and timestamp, mark missing or uncertain values, and group records by asset. For each
+discovered name, record why discovery alone says nothing about security. Submit a compact asset
+inventory and a one-paragraph scope/limitations note; do not query real domains.
 6. Separate confirmed facts from assumptions.
 
 Deliverable: a short reconnaissance report that records sources and timestamps for each supplied
@@ -132,3 +137,17 @@ observation. Do not gather information about a real organization for this exerci
 4. What information may WHOIS provide, and what are its limitations?
 5. Why does a discovered subdomain not prove vulnerability?
 6. What should an attack-surface inventory include?
+
+## Suggested answers
+
+1. Passive reconnaissance uses already available information; active reconnaissance sends queries
+   or interacts with a target and therefore needs explicit authorization.
+2. OSINT is open-source intelligence: information collected from publicly available sources.
+3. A is IPv4, AAAA IPv6, CNAME alias, MX mail exchanger, NS name server, TXT text, SOA zone
+   authority data, PTR reverse mapping.
+4. WHOIS may provide registration, registrar, and date/contact data, but privacy services, stale
+   records, and regional rules limit completeness.
+5. A name only indicates that an asset may exist; it does not establish exposure, a weakness, or
+   impact.
+6. Record assets, ownership, purpose, source/evidence, exposure, dependencies, and confidence
+   within the approved scope.

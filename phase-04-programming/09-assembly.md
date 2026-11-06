@@ -13,6 +13,9 @@ By the end of this lesson, you should be able to:
 Assembly is a low-level programming language closely related to processor instructions. The
 source says it helps learners understand what a computer executes.
 
+**Machine code** is the processor-encoded instruction data; **disassembly** is translating that
+code into a human-readable Assembly-like representation.
+
 ## Assembly syllabus
 
 1. Binary and hexadecimal.
@@ -49,6 +52,9 @@ Use a paper worksheet or instructor-provided, non-executable example:
 
 Do not execute unknown binaries or analyze malware outside a properly isolated, authorized lab.
 
+**Deliverable:** A completed concept map connecting number formats, registers, instructions,
+memory/control flow, machine code, and disassembly, with one sentence explaining their relationship.
+
 ## Key takeaways
 
 - Assembly is closely related to processor instructions.
@@ -64,3 +70,11 @@ Do not execute unknown binaries or analyze malware outside a properly isolated, 
 3. What is disassembly?
 4. When does the source recommend learning Assembly?
 5. Name three Assembly-related cybersecurity applications from the source.
+
+## Answer key
+
+1. Assembly uses human-readable mnemonics closely related to the instructions a processor executes.
+2. Binary and hexadecimal.
+3. Disassembly translates machine-code instructions into a more readable Assembly-like form.
+4. Later, when studying reverse engineering and binary analysis.
+5. Examples include reverse engineering, malware analysis, and binary analysis.

@@ -77,6 +77,11 @@ pre-generated local test results. Do not attempt logins against real accounts or
 4. Explain why hashes should be created specifically for a lab and why real credentials must never
    be used.
 
+**Steps and deliverable:** Create a short policy memo from the mock audit and log: identify one
+weakness, recommend a protective control, and state what evidence would show the control is working.
+Use only synthetic values and redact identifiers. Include a clear statement that no password
+recovery or login attempt was performed.
+
 ## Key takeaways
 
 - John the Ripper and Hashcat support password-security audits; Hydra audits network logins.
@@ -92,3 +97,17 @@ pre-generated local test results. Do not attempt logins against real accounts or
 3. What do hash mode and attack mode mean?
 4. What do rate limiting and account lockout do?
 5. What data is appropriate for a password-audit exercise?
+
+## Suggested answers
+
+1. A password hash is a one-way derived value; a wordlist is a set of candidate strings; a
+   dictionary attack tries likely candidates, while brute force tries combinations systematically.
+2. Both can audit hashes in authorized contexts; John the Ripper is a general password-auditing
+   tool and Hashcat supports GPU-accelerated hash recovery. Neither should be used with real
+   credentials in this exercise.
+3. Hash mode identifies the hash format; attack mode describes how candidate inputs are generated
+   or tested.
+4. Rate limiting slows repeated attempts; account lockout temporarily blocks repeated failures
+   but needs careful tuning to avoid denial-of-service against users.
+5. Use synthetic, purpose-created hashes and mock logs only; never use real, leaked, or coworkers'
+   password data.

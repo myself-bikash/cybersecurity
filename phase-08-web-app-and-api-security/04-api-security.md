@@ -155,6 +155,11 @@ The source's suggested API security requirements:
 - Use HTTPS in deployment.
 - Log security-relevant events without recording passwords or complete tokens.
 
+**Steps and deliverable:** For the control matrix, write one security property and one safe
+verification case per control using synthetic identities and data. For the build/review tasks,
+submit the API's route/role matrix, writable-field schema, test results, and one remediated finding
+with a passing retest. Run only local tests; never use public APIs or real user records.
+
 ## Important definitions
 
 | Term | Definition |
@@ -206,3 +211,22 @@ data.
 6. How does BOLA differ from an authentication failure?
 7. List the lifecycle stages of API-key management.
 8. Why should logs omit complete tokens and passwords?
+
+## Suggested answers
+
+1. Yes. Authentication can correctly identify a caller while authorization still allows that
+   caller to access another user's object or an unapproved operation.
+2. RBAC grants by role; ABAC evaluates attributes and policy; ReBAC evaluates relationships such
+   as ownership or membership.
+3. Rate-limit costly, sensitive, or abuse-prone operations such as login, recovery, resource
+   creation, and expensive queries; choose limits based on business and availability needs.
+4. Input validation constrains accepted data; output encoding represents data safely for its
+   output context.
+5. Mass assignment occurs when client-supplied fields are automatically bound to model properties
+   that should not be client-writable.
+6. BOLA is missing authorization for a specific object; authentication failure means identity was
+   not correctly established.
+7. Define purpose/scope, issue securely, store safely, monitor usage, rotate when appropriate, and
+   revoke/retire when no longer needed or compromised.
+8. Complete secrets in logs can be copied, searched, or retained by many systems; log identifiers
+   or redacted metadata instead.

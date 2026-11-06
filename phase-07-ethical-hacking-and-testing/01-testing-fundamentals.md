@@ -106,6 +106,11 @@ Create a one-page authorization document for a fictional company named SecureTec
 
 Use fictional details; do not treat this exercise as authorization to test a real system.
 
+**Steps and deliverable:** Draft the document with every required field, mark all targets as
+fictional/local, and explicitly exclude connected systems, destructive activity, and denial of
+service. Add a stop condition and a named contact role. Submit the one-page authorization and a
+short note explaining how scope prevents accidental testing beyond permission.
+
 <details class="scenario-card">
 <summary>Quick check: an in-scope app links to another domain</summary>
 
@@ -136,3 +141,16 @@ update. Document the boundary and do not proceed unless permission is explicit.
 3. What belongs in scope and rules of engagement?
 4. Why does permission for one system not extend to connected systems?
 5. How do vulnerability assessment and penetration testing complement each other?
+
+## Suggested answers
+
+1. Ethical hacking is the broad practice of authorized security work; penetration testing is a
+   scoped assessment that validates selected weaknesses and potential impact.
+2. Planning/authorization, reconnaissance, scanning/enumeration, vulnerability assessment,
+   controlled validation, analysis/reporting, and remediation/retesting.
+3. Identify the targets, dates, approved and prohibited actions, data handling, contacts, stop
+   conditions, and reporting requirements.
+4. Ownership and authorization are specific; a technical link or shared provider does not grant
+   permission for another system.
+5. A vulnerability assessment identifies and prioritizes possible weaknesses; a penetration test
+   can safely validate selected issues. Each provides different evidence.

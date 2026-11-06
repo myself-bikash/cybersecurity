@@ -29,6 +29,8 @@ and supporting malware analysis as uses.
 Related concepts: executable file, machine code, assembly language, disassembly, decompilation,
 functions, registers, and memory addresses.
 
+## Practical exercises and deliverables
+
 **Practical exercise:** Open a harmless program you compiled yourself, analyze it with Ghidra,
 examine functions and readable strings, view its assembly representation, and compare the
 decompiled output with your source. Do not analyze or run unknown samples on a production system.
@@ -77,6 +79,12 @@ network-related memory artifacts, malware activity, and incident response.
 system context, examine processes and available network-related artifacts, identify suspicious
 behavior from the sample, and write a short report.
 
+**Steps and deliverable:** Use only your own compiled program, test files, and a provided training
+image. Record the evidence source, calculate an integrity hash where appropriate, and keep the
+original unchanged. Separate direct observations from interpretations and list at least one
+limitation. Submit a short Ghidra comparison, an Autopsy case summary, and a memory-artifact report;
+do not run unknown samples.
+
 ## Tool comparison
 
 | Tool | Main purpose | Evidence or target |
@@ -100,3 +108,16 @@ behavior from the sample, and write a short report.
 4. What does chain of custody document?
 5. How do disk forensics and memory forensics differ?
 6. Why can volatile data disappear?
+
+## Suggested answers
+
+1. Reverse engineering examines a program's structure and behavior to understand how it works.
+2. A disassembler translates machine instructions into assembly; a decompiler attempts a
+   higher-level representation resembling source code. Neither reliably recovers the original
+   source.
+3. Digital forensics systematically identifies, preserves, examines, and reports digital evidence.
+4. Chain of custody records who collected, handled, transferred, and examined evidence, supporting
+   its traceability.
+5. Disk forensics examines persistent storage and file-system evidence; memory forensics examines
+   a captured state of RAM and its transient artifacts.
+6. Volatile data can be overwritten or lost when a system changes state, shuts down, or loses power.

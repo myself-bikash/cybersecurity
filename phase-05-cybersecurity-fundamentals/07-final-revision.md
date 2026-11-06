@@ -131,6 +131,11 @@ authorization to assess.
    Chain, or OWASP—would help organize another part of the assessment.
 6. Explain what evidence you would need to justify a risk rating.
 
+**Steps and deliverable:** Complete the six items in order. Label each risk assumption separately
+from observed facts, and give every recommendation an owner or responsible role and a reason.
+Submit a one-page asset/risk register, a CIA/AAA design diagram, a six-function CSF map, and a
+short list of evidence gaps. Keep the organization and all data fictional.
+
 ## Key takeaways
 
 - Security principles, cryptography, authentication, threats, and frameworks are connected parts
@@ -144,6 +149,43 @@ authorization to assess.
 1. Which three concepts from this phase are easiest to confuse, and how do you distinguish them?
 2. Which assessment questions did you need to revisit, and what lesson will you review?
 3. What evidence would you gather before recommending controls for a real organization?
+
+## Suggested answers
+
+1. Answers vary. Common pairs include authentication/authorization (identity vs. permissions),
+   encryption/hashing (reversible confidentiality vs. one-way digest), and threat/vulnerability
+   (possible cause vs. weakness). State what each term answers and give a distinct example.
+2. Answers vary; revisit any comparison or assessment item answered incorrectly and explain the
+   corrected distinction in your own words.
+3. Confirmed assets, data sensitivity, configurations, exposure, existing safeguards, business
+   impact, incident history, and stakeholder requirements. Record uncertainty rather than guessing.
+
+### Quick answer guide to the 30-question assessment
+
+1. Cybersecurity protects information and systems against unauthorized access, change, disclosure,
+   disruption, or destruction.
+2–5. CIA means confidentiality (authorized access), integrity (authorized, accurate changes), and
+   availability (timely access for authorized users).
+6–8. Authentication verifies identity; authorization grants permissions; least privilege limits
+   each identity to required permissions.
+9–10. Encryption is reversible with a key; hashing is a one-way digest.
+11–14. Symmetric encryption shares one secret key; asymmetric uses a public/private pair. AES is
+   symmetric, RSA is asymmetric, and a unique salt makes password hashes less alike and thwarts
+   precomputed lookups.
+15–17. Digital signatures support integrity/authenticity evidence; PKI manages keys and
+   certificates; TLS protects data in transit and can authenticate the server, not the site's
+   overall trustworthiness.
+18–20. 2FA uses two distinct factor categories; MFA uses two or more. OAuth 2.0 delegates
+   authorization while OIDC adds identity; Kerberos uses KDC-issued tickets for services.
+21–25. Ransomware can deny access to data and disrupt operations; spraying uses few candidates
+   across accounts unlike many guesses against one account; MitM can observe or alter
+   communications; privilege escalation increases access; a zero-day lacks an available vendor fix
+   at the relevant time.
+26–29. NIST CSF 2.0 functions are Govern, Identify, Protect, Detect, Respond, Recover. ATT&CK
+   organizes observed adversary behavior; the Kill Chain models seven attack stages; OWASP Top 10
+   raises awareness of common application risks.
+30. Inventory assets and business needs, identify plausible threats and weaknesses, assess impact
+   and likelihood using evidence, record uncertainty, and prioritize proportionate controls.
 
 ## Phase completion checklist
 

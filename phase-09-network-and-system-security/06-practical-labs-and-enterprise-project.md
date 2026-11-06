@@ -133,3 +133,25 @@ activities. No exploit steps or commands are part of this project.
 - [ ] Findings include remediation and verification.
 - [ ] Logs and reports do not expose credentials or personal data.
 - [ ] Backup and recovery assumptions are tested or clearly identified as untested.
+
+**Lesson deliverable:** submit the isolated-lab diagram, one completed exercise record, and a
+sanitized final assessment that states scope, evidence, changes, verification, limitations, and
+recovery status.
+
+## Review questions
+
+1. What must be established before assessing a system or network?
+2. Why should vulnerable VMs be isolated from production and public networks?
+3. How do IDS monitoring and firewall enforcement differ?
+4. What evidence should a vulnerability-management report include?
+5. Why should backups be restored in a test rather than merely counted?
+
+### Answer key
+
+1. Ownership or explicit authorization and a clearly defined scope; this prevents impact outside
+   the approved lab.
+2. Isolation limits unintended exposure and prevents lab activity from affecting other systems.
+3. IDS observes and alerts; a firewall enforces traffic policy.
+4. Scope, sanitized findings, severity/context, remediation, verification, and limitations support
+   safe, actionable follow-up.
+5. A restore test confirms that copies and procedures can actually recover data and services.

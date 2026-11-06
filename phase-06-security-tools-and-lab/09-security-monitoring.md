@@ -26,6 +26,8 @@ investigation, monitoring, threat detection, and threat hunting.
 
 Generated events depend on Sysmon configuration.
 
+## Practical exercises and deliverables
+
 **Practical exercise:** In a Windows lab VM, install Sysmon using a suitable training configuration,
 review its operational logs in Event Viewer, identify process-creation events and recorded
 connections, and investigate an unusual event from the sample data.
@@ -99,6 +101,11 @@ suspicious events, and document the investigation.
 These products overlap but are not identical; licensing, architecture, integrations, deployment,
 and features differ.
 
+**Exercise deliverables:** For each platform exercise, use only a lab endpoint or supplied logs.
+Record the time range and source, select one event, and write down the observed fields, a benign
+alternative explanation, and the next safe verification step. Submit a sanitized timeline and a
+brief incident note. Do not treat an alert alone as proof of compromise.
+
 ## Key takeaways
 
 - Sysmon records endpoint telemetry; event generation depends on configuration.
@@ -115,3 +122,20 @@ and features differ.
 4. What do Event, Log, Index, SPL, Dashboard, and Alert mean in Splunk?
 5. What are the main Elastic Stack components named in the source?
 6. How do Wazuh, Splunk, and Elastic Security compare?
+
+## Suggested answers
+
+1. Sysmon records configured endpoint activity. Examples include Event ID 1 (process creation),
+   3 (network connection), 11 (file creation), and 22 (DNS query); exact events depend on
+   configuration.
+2. Wazuh Agent, Wazuh Server, Wazuh Indexer, and Wazuh Dashboard.
+3. SIEM centralizes and analyzes events from multiple systems to help detect and investigate
+   suspicious activity; it does not prove maliciousness by itself.
+4. An event is a recorded occurrence; a log is a record of activity; an index organizes stored
+   data; SPL is Splunk's search language; a dashboard visualizes results; an alert notifies when
+   configured conditions match.
+5. Elasticsearch stores/searches data, Logstash processes data, Kibana supports search and
+   visualization, and Elastic Agent collects/forwards data.
+6. Wazuh is open-source monitoring and detection; Splunk is a data analytics/SIEM platform; Elastic
+   Security provides security analytics and detection on the Elastic Stack. Their features and
+   deployments overlap but are not interchangeable.

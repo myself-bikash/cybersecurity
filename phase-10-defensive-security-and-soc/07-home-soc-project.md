@@ -14,6 +14,12 @@ management, or lab services to the public internet. Use synthetic accounts and d
 malware, exploit payloads, and attack tooling; the project can be completed using benign test events
 or supplied synthetic logs.
 
+## Practical exercise
+
+Complete the project in stages: first verify lab isolation, then collect benign or synthetic events,
+test one detection, and document a synthetic investigation. You may stop after one endpoint if
+resources are limited.
+
 ## 1. Lab architecture
 
 | Component | Purpose |
@@ -181,6 +187,9 @@ Questions for the analyst:
 - [ ] Sanitized incident report.
 - [ ] Lessons learned and detection improvements.
 
+**Lesson deliverable:** submit the isolated topology and scope, a sample of sanitized collected
+events, a tested benign detection or documented rule design, and the final synthetic incident report.
+
 ## Key takeaways
 
 - A useful home SOC lab emphasizes telemetry, investigation, and documentation—not attack
@@ -196,3 +205,16 @@ Questions for the analyst:
 3. How do you know whether an event was collected and whether a detection fired?
 4. What context is needed before escalating a failed-login alert?
 5. How will you protect privacy and preserve evidence in your report?
+
+### Answer key
+
+1. A small SIEM server plus one endpoint and isolated virtual network; this demonstrates collection
+   and investigation without unnecessary lab complexity.
+2. Wazuh receives only the configured Windows/Linux events and other enabled telemetry; verify the
+   actual sources rather than assuming coverage.
+3. Confirm an event appears in collected records, then separately verify whether a configured rule
+   generated an alert.
+4. Review account, device, time, source, success/failure sequence, expected activity, and correlated
+   endpoint/network evidence.
+5. Use synthetic identities, redact sensitive fields, preserve originals, record handling, and
+   distinguish facts from interpretation.

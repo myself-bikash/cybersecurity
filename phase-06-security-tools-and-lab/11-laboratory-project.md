@@ -107,3 +107,27 @@ and synthetic data.
 2. What evidence can each tool category provide?
 3. Which project tasks use sample data instead of live testing, and why?
 4. What limitations and authorization boundaries should appear in the report?
+
+## Suggested answers
+
+1. Use Kali, Ubuntu Server, Windows, and an intentionally vulnerable training app on an isolated
+   virtual network. Keep vulnerable systems disconnected from public networks and take snapshots.
+2. Discovery reports show advertised hosts/services; packet captures show recorded communications;
+   application reviews show requests and alerts; forensic images show disk or memory artifacts;
+   monitoring logs show configured endpoint events. Each source has coverage and context limits.
+3. Network discovery, web review, validation, password review, forensics, and monitoring use
+   sanitized reports, local training targets, sample images/logs, or synthetic data; this avoids
+   unauthorized impact and exposure of real secrets.
+4. State the lab scope, data source, tool/configuration limits, uncertainty, evidence handling, and
+   that no external systems or real accounts were tested.
+
+## Project workflow and deliverables
+
+1. Draw the isolated VM architecture and record snapshots and network boundaries.
+2. For each of the eight tasks, identify the question, approved data source, steps performed, and
+   output before analysis.
+3. Build a findings table separating observations, interpretations, and open verification
+   questions.
+4. Submit the architecture diagram, sanitized evidence notes, recommendations, limitations, and
+   final report. Use no real credentials, personal data, public-target scans, exploit execution, or
+   password recovery.

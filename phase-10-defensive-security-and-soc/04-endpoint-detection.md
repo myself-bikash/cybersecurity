@@ -103,10 +103,13 @@ investigation; each requires context.
 
 ## Practical exercise
 
-Review a synthetic endpoint timeline with a user sign-in, process relationship, file change, and
-network connection. Identify what EDR/Sysmon data is available, what remains unknown, and which
-additional event sources are needed before classifying it. Do not execute suspicious files or
-commands.
+1. Review a synthetic endpoint timeline containing a sign-in, process relationship, file change,
+   and network connection.
+2. Mark the EDR/Sysmon data that is available and the facts that remain unknown.
+3. Name additional sources needed before classification; do not execute suspicious files or commands.
+
+**Deliverable:** an annotated timeline listing evidence, missing context, a cautious assessment,
+and one defensive follow-up.
 
 ## Key takeaways
 
@@ -123,3 +126,16 @@ commands.
 4. What kinds of events may Sysmon record?
 5. Why is Sysmon not a complete EDR product?
 6. How do antivirus, EDR, and XDR differ in cross-domain visibility?
+
+### Answer key
+
+1. Signature-based matching, heuristic inspection, and behavior monitoring; they detect different
+   known or suspicious characteristics.
+2. EDR may collect process, command, file, network, registry, user, and script activity.
+3. XDR adds correlation with sources such as network, email, identity, and cloud.
+4. Sysmon may record process creation, connections, file/registry activity, DNS queries, and more,
+   depending on its configuration.
+5. Sysmon records telemetry; it does not by itself provide the full detection, investigation, and
+   response capabilities of EDR.
+6. Antivirus visibility is typically malware-focused, EDR is endpoint-focused, and XDR combines
+   endpoint information with additional security domains.

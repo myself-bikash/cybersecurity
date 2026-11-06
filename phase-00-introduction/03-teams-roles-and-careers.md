@@ -54,6 +54,9 @@ For each fictional task, select the closest specialization from the table and ex
 
 Do not perform testing or access real systems as part of this exercise.
 
+**Deliverable:** A five-row role-matching table with the selected specialization and a one-sentence
+reason for each choice.
+
 ## Key takeaways
 
 - Red teams simulate attacks within an authorized engagement; blue teams focus on defense.
@@ -67,3 +70,13 @@ Do not perform testing or access real systems as part of this exercise.
 2. Why does the source describe purple teaming as a methodology?
 3. How do a security analyst's responsibilities differ from a penetration tester's?
 4. Name three non-penetration-testing specializations and describe their responsibilities.
+
+## Answer key
+
+1. Red teams simulate attacks within an approved scope; blue teams monitor, detect, and respond.
+2. Purple teaming is a way for red and blue teams to share findings, not necessarily a standalone
+   team.
+3. Analysts focus on monitoring and response; penetration testers conduct scoped, authorized tests
+   to identify weaknesses.
+4. Examples: incident response contains and remediates incidents; application security protects
+   code and development pipelines; GRC supports compliance with policies and frameworks.

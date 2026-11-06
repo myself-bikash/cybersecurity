@@ -86,9 +86,13 @@ administrator privileges.
 
 ## Practical exercise
 
-For a fictional department transfer, create a simple access matrix showing the user's role before
-and after the transfer. Identify permissions to provision, review, and remove. Then mark which
-actions require a privileged account, approval, MFA, or time-limited access.
+1. For a fictional department transfer, create an access matrix showing the user's role before and
+   after the transfer.
+2. Identify permissions to provision, review, and remove.
+3. Mark actions requiring a privileged account, approval, MFA, or time-limited access.
+
+**Deliverable:** a before/after access matrix and a short approval checklist that identifies
+permissions to add, review, remove, and time-limit.
 
 ## Key takeaways
 
@@ -105,3 +109,15 @@ actions require a privileged account, approval, MFA, or time-limited access.
 4. What is RBAC?
 5. How do IAM and PAM differ?
 6. Name four PAM controls.
+
+### Answer key
+
+1. IAM governs identity, verification, resource access, and removal of access across the identity
+   lifecycle.
+2. Knowledge, possession, and inherence; factors must come from different categories.
+3. SSO reduces repeated sign-ins across connected services, but concentrates risk in the identity
+   provider.
+4. RBAC assigns permissions based on a user's job role.
+5. IAM broadly manages identities/access; PAM adds safeguards for elevated accounts and sessions.
+6. Examples: JIT access, credential vaulting, session monitoring, credential rotation, approval,
+   and separate admin accounts.
