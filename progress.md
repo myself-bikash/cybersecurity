@@ -1,12 +1,20 @@
 # Learning Dashboard
 
-Use this page to explore the course and see which lessons you have marked complete. Progress is
-stored in this browser on this device only; it is not sent to a server. Clearing browser storage or
-using another browser/device will reset or change what you see.
+Use this page to track what you have read and practiced, and to open phase assessments. Reading and
+practice statuses are self-reported. A phase assessment combines a prerequisite check, an
+automatically checked knowledge check, and a practical evidence rubric that you score yourself;
+this course cannot independently verify your work or award a credential.
+
+Records are stored in this browser on this device only and are not sent to a server. Clearing
+browser storage or using another browser/device will reset or change what you see.
 
 <div id="course-progress-dashboard" aria-live="polite">
   <p>Preparing your local learning dashboard…</p>
 </div>
+
+Open the [phase assessment workspace](assessment.md) to check prerequisites, answer knowledge
+questions, and record evidence for an applied challenge. The recommended passing score is 80% on
+the knowledge check and practical rubric.
 
 ## Phase map
 
@@ -32,5 +40,5 @@ using another browser/device will reset or change what you see.
 - [Open the cumulative capstone](capstone/index.md) to connect skills across the phases.
 - [Return to the course home](README.md) for the complete roadmap.
 
-<button id="reset-course-progress" class="md-button" type="button">Clear saved progress on this device</button>
+<button id="reset-course-progress" class="md-button" type="button">Clear saved learning record on this device</button>
 <span id="course-progress-message" role="status" aria-live="polite"></span>

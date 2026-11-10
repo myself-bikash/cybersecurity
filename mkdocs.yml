@@ -1,6 +1,7 @@
 site_name: "Cybersecurity: Foundations to Practice"
 site_description: A guided cybersecurity learning path with safe exercises and a cumulative capstone.
 site_author: Course contributors
+site_url: https://myself-bikash.github.io/cybersecurity/
 docs_dir: docs
 site_dir: site
 strict: true
@@ -59,7 +60,17 @@ nav:
   - Start here:
       - Course guide: course-guide.md
       - Learning dashboard: progress.md
+      - Phase assessments: assessment.md
       - Cumulative capstone: capstone/index.md
+  - Course quality and pathways:
+      - Audit report: AUDIT_REPORT.md
+      - Curriculum map: CURRICULUM_MAP.md
+      - Learning paths: LEARNING_PATHS.md
+      - Resource index: RESOURCE_INDEX.md
+      - Final quality report: FINAL_QUALITY_REPORT.md
+      - Contributing guide: CONTRIBUTING.md
+      - Security policy: SECURITY.md
+      - Changelog: CHANGELOG.md
   - Phase 00 — Introduction:
       - Overview: phase-00-introduction/index.md
       - Cybersecurity and InfoSec: phase-00-introduction/01-cybersecurity-and-infosec.md
